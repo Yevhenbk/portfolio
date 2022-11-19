@@ -15,6 +15,24 @@
     "next": "13.0.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "styled-components": "^5.3.6",
+    "twin.macro": "^3.0.0",
     "typescript": "4.9.3"
+  },
+  "devDependencies": {
+    "@types/styled-components": "^5.1.26",
+    "autoprefixer": "^10.4.13",
+    "babel-plugin-styled-components": "^2.0.7",
+    "babel-plugin-twin": "^1.1.0",
+    "postcss": "^8.4.19",
+    "tailwindcss": "^3.2.4"
+  },
+  "babelMacros": {
+    "twin": {
+      "styled": {
+        "import": "default",
+        "from": "styled-components"
+      }
+    }
   }
 }
