@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { TextStyled, Props as HeaderProps } from './TextStyled'
 
-export interface Props
+interface Props
   extends HeaderProps {
     children: React.ReactNode,
     isHeader: boolean
