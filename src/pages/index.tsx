@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { NextPage } from 'next'
+import Iframe from '@ui/atoms/Iframe/Iframe'
 import tw from 'twin.macro'
 import styled from 'styled-components'
 
@@ -11,13 +12,10 @@ const Home: NextPage = () => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <main className='flex flex-col items-center justify-center w-full flex-1 px-20 text-center'>
-        <StyledButton>In Style</StyledButton>
-        <br />
-        <TailwindButton>In Tailwind Style</TailwindButton>
-        <br />
-        {/* <ConditionalButton isRed={true}>Conditional Tailwind</ConditionalButton> */}
-        <ConditionalStyled isRed={false}>Tested button</ConditionalStyled>
+      <main className='flex flex-col items-center w-full flex-1 px-20 text-center'>
+        {/* <StyledButton>In Style</StyledButton> */}
+        <Iframe />
+        {/* <ConditionalStyled isRed={false}>Tested button</ConditionalStyled> */}
       </main>
     </div>
   )
