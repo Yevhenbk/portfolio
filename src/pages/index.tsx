@@ -1,8 +1,9 @@
 import Head from 'next/head'
+import { NextPage } from 'next'
 import tw from 'twin.macro'
 import styled from 'styled-components'
 
-export default function Home() {
+const Home: NextPage = () => {
   return (
     <div className='flex flex-col items-center justify-center min-h-screen py-2'>
       <Head>
@@ -20,6 +21,8 @@ export default function Home() {
     </div>
   )
 }
+
+export default Home
 
 // still works despite importing from twin.macro
 const StyledButton = styled.button`
