@@ -1,21 +1,17 @@
-import Head from 'next/head'
 import { NextPage } from 'next'
+import Layout from '../components/Layout'
 import Iframe from '@ui/atoms/Iframe/Iframe'
 import tw from 'twin.macro'
 import styled from 'styled-components'
+import Text from '@ui/atoms/Text/Text'
 
 const Home: NextPage = () => {
   return (
     <div className='flex flex-col items-center justify-center min-h-screen py-2'>
-      <Head>
-        <title>Create Next App</title>
-        <link rel='icon' href='/favicon.ico' />
-      </Head>
-
-      <main className='flex flex-col items-center w-full flex-1 px-20 text-center'>
-        {/* <StyledButton>In Style</StyledButton> */}
+      <Layout title='Home' />
+      <main className='flex flex-col items-center w-full text-center'>
+        <Text color='red' fonFamily='sans' fontSize={42} fontWeight={500} >Hellos</Text>
         <Iframe />
-        {/* <ConditionalStyled isRed={false}>Tested button</ConditionalStyled> */}
       </main>
     </div>
   )
