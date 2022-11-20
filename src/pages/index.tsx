@@ -16,7 +16,8 @@ const Home: NextPage = () => {
         <br />
         <TailwindButton>In Tailwind Style</TailwindButton>
         <br />
-        <ConditionalButton isRed={true}>Conditional Tailwind</ConditionalButton>
+        {/* <ConditionalButton isRed={true}>Conditional Tailwind</ConditionalButton> */}
+        <ConditionalStyled isRed={false}>Tested button</ConditionalStyled>
       </main>
     </div>
   )
@@ -46,6 +47,20 @@ const TailwindButton = tw.button`
   rounded
 `
 
-const ConditionalButton = styled.button<{ isRed: boolean }>`
-  ${props => (props.isRed ? tw`text-red-500` : tw`text-amber-400`) }
-`
+// const ConditionalButton = styled.button<{ isRed: boolean }>`
+//   ${props => (props.isRed ? tw`text-red-500` : tw`text-amber-400`) }
+// `
+
+interface StyledProps {
+  isRed: boolean
+}
+
+const ConditionalStyled = styled.button((props: StyledProps) => [
+  props.isRed ? tw`bg-red-50` : tw`bg-amber-600`,
+  tw`
+    text-2xl
+    font-semibold
+    p-4
+    rounded-lg
+    text-white`
+])
