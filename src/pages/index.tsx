@@ -10,7 +10,7 @@ const Home: NextPage = () => {
     <div className='flex flex-col items-center justify-center min-h-screen py-2'>
       <Layout title='Home' />
       <main className='flex flex-col items-center w-full text-center'>
-        <Text color='red' fonFamily='sans' fontSize={42} fontWeight={500} >Hellos</Text>
+        <Text isHeader={true} color='red' fonFamily='sans' fontSize={42} fontWeight={500} >Hellos</Text>
         <Iframe />
       </main>
     </div>
