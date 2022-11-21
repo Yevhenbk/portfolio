@@ -28,7 +28,7 @@ export const ContextProvider = (props: Props) => {
   React.useEffect(() => {  
 
     showColor()
-
+    
     window.addEventListener('scroll', showColor)
 
   },[])  

@@ -17,7 +17,8 @@ export const NavbarStyled = styled.div((props: Props) => [
      items-center 
      justify-around
      ease-in 
-     duration-200`  
+     duration-200
+     z-20`  
 ])
 
 export const DivStyled = tw.div`

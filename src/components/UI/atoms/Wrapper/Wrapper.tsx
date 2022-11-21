@@ -8,7 +8,7 @@ interface Props
   }    
 
 
-const Text: React.FC<Props> = (props) => {
+const Wrapper: React.FC<Props> = (props) => {
   return (
     <WrapperStyled {...props}>
       {props.children}
@@ -16,4 +16,4 @@ const Text: React.FC<Props> = (props) => {
   )
 }
 
-export default Text
+export default Wrapper

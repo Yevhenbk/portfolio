@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import tw from 'twin.macro'
 
 export interface Props {
   justify: string,
@@ -9,9 +8,10 @@ export interface Props {
 }
 
 export const WrapperStyled = styled.div((props: Props) => [`
-  justify-items: ${props.justify};
+  display: flex;
   flex-direction: ${props.direction};
+  justify-content: ${props.justify};
   aling-items: ${props.align};
-  padding: ${props.padding}`,
-  tw`flex`
+  padding: ${props.padding};
+  width: 100%;`,
 ])

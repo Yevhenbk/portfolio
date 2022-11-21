@@ -3,17 +3,13 @@ import { TextStyled, Props as HeaderProps } from './TextStyled'
 
 interface Props
   extends HeaderProps {
-    children: React.ReactNode,
-    isHeader: boolean
+    children: React.ReactNode
   }
 
 const Text: React.FC<Props> = (props) => {
   return (
     <TextStyled {...props}>
-      {props.isHeader ?
-        <h1>{props.children}</h1> :
-        <p>{props.children}</p>
-      }
+      {props.children}
     </TextStyled>
   )
 }
