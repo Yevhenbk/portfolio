@@ -10,10 +10,9 @@ interface Props
 const Text: React.FC<Props> = (props) => {
   return (
     <TextStyled {...props}>
-      {
-        props.isHeader ?
-          <h1>{props.children}</h1> :
-          <p>{props.children}</p>
+      {props.isHeader ?
+        <h1>{props.children}</h1> :
+        <p>{props.children}</p>
       }
     </TextStyled>
   )

@@ -10,8 +10,9 @@ interface Props
 const Button: React.FC<Props> = (props) => {
   return (
     <ButtonStyled 
-    onClick={props.onClick} 
-    {...props}>
+      onClick={props.onClick} 
+      {...props}
+    >
       {props.children}
     </ButtonStyled>
   )
