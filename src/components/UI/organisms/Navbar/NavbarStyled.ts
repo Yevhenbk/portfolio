@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import tw from 'twin.macro'
 
-export interface Props {
+interface Props {
   isWhite: boolean 
 }
 
