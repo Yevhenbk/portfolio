@@ -1,16 +1,16 @@
 import { NextPage } from 'next'
 import Layout from '../components/Layout'
-import Iframe from '@ui/atoms/Iframe/Iframe'
+import Iframe from '@atoms/Iframe/Iframe'
 import tw from 'twin.macro'
 import styled from 'styled-components'
-import Text from '@ui/atoms/Text/Text'
+import Text from '@atoms/Text/Text'
 
 const Home: NextPage = () => {
   return (
     <div className='flex flex-col items-center justify-center min-h-screen py-2'>
       <Layout title='Home' />
       <main className='flex flex-col items-center w-full text-center'>
-        <Text isHeader={true} color='red' fonFamily='sans' fontSize={42} fontWeight={500} >Hellos</Text>
+        <Text isHeader={true} color='red' fontFamily='Share Tech Mono' fontSize={42} fontWeight={500} >Hellos</Text>
         <Iframe />
       </main>
     </div>
@@ -18,16 +18,6 @@ const Home: NextPage = () => {
 }
 
 export default Home
-
-// still works despite importing from twin.macro
-const StyledButton = styled.button`
-  background: red;
-  color: white;
-  font-size: 1em;
-  text-align: center;
-  padding: 0.25em 1em;
-  border: 2px solid black;
-`
 
 const TailwindButton = tw.button`
   bg-red-500
