@@ -13,5 +13,7 @@ export const LinkStyled = styled.div((props: Props) => [`
   color: ${props.color};
   font-family: ${props.fonFamily};
   font-size: ${props.fontSize}px;
-  font-weight: ${props.fontWeight};`
+  font-weight: ${props.fontWeight};`,
+  tw`ease-in 
+     duration-200`
 ])

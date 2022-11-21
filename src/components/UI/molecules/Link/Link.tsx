@@ -6,7 +6,7 @@ interface Props
     children: React.ReactNode,
   }
 
-const Link = (props: Props) => {
+const Link: React.FC<Props> = (props) => {
   return (
     <LinkStyled {...props}>
       {props.children}  

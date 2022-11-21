@@ -7,7 +7,7 @@ interface Props
     isHeader: boolean
   }
 
-const Text = (props: Props) => {
+const Text: React.FC<Props> = (props) => {
   return (
     <TextStyled {...props}>
       {
