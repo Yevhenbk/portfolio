@@ -2,7 +2,8 @@ import styled from 'styled-components'
 import tw from 'twin.macro'
 
 interface Props {
-  isWhite: boolean 
+  isWhite?: boolean,
+  width?: string 
 }
 
 export const NavbarStyled = styled.div((props: Props) => [
@@ -21,9 +22,10 @@ export const NavbarStyled = styled.div((props: Props) => [
      z-20`  
 ])
 
-export const DivStyled = tw.div`
-  flex
-  flex-row
-  justify-between
-  w-[30rem]
-`
+export const DivStyled = styled.div((props: Props) => [
+  tw`flex
+     flex-row
+     justify-between
+     items-center`,
+     `width: ${props.width};`
+])
