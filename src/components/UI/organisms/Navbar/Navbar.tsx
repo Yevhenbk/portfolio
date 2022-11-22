@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
             color={ navbar ? 'black' : '#6E6E6E' }
             background='transparent'
             fonFamily='Share Tech Mono, sans'
-            fontSize={14}
+            fontSize={16}
             fontWeight={500}>
             <span className='text-[#5A3BF8]'>
               {item.number}.
@@ -32,7 +32,7 @@ const Navbar: React.FC = () => {
         hoverBackground='transparent'
         hoverColor='#5A3BF8'
         borderColor='#5A3BF8'
-        fontSize={14}
+        fontSize={16}
         fontFamily='Share Tech Mono, serif'
         padding='.25rem .75rem'
         radius={3}

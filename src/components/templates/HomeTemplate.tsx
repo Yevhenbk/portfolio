@@ -17,10 +17,10 @@ const HomeTemplate: React.FC = () => {
         align='center'
       >
         <Iframe />
-        <div className='w-[35rem] absolute top-40 left-20'>
+        <div className='w-[45rem] absolute top-40 left-20'>
           <Text
             color='black'
-            fontSize={18}
+            fontSize={21}
             fontWeight={500}
             fontFamily='Poppins, serif'
           >
@@ -28,7 +28,7 @@ const HomeTemplate: React.FC = () => {
           </Text>
           <Text
             color='black'
-            fontSize={52}
+            fontSize={60}
             fontFamily='Poppins, serif'
             fontWeight={900}
             lineHeight='1.25'
@@ -37,7 +37,7 @@ const HomeTemplate: React.FC = () => {
           </Text>
           <Text
             color='rgba(0, 0, 0, 0.65)'
-            fontSize={50}
+            fontSize={60}
             fontFamily='Poppins, serif'
             fontWeight={900}
             lineHeight='1.25'
@@ -46,16 +46,31 @@ const HomeTemplate: React.FC = () => {
           </Text>
           <Text
             color='black'
-            fontSize={18}
+            fontSize={21}
             fontWeight={500}
             fontFamily='Poppins, serif'
-            width='25rem'
+            width='30rem'
           >
             <p>
-              I’m a software engineer specializing in building (and occasionally designing)
+              I’m a software engineer specializing in building 
+              (and occasionally designing)
               exceptional digital experiences.
             </p>
           </Text>
+          <Button
+            color='white'
+            background='black'
+            radius={100}
+            fontFamily='Poppins, serif'
+            fontWeight={500}
+            padding='.75rem 2.5rem'
+            fontSize={18}
+            hoverBackground='#5A3BF8'
+            hoverColor='white'
+            margin='2rem 0 0'
+          >
+            Contact me
+          </Button>
         </div>
       </Wrapper>
     </main>

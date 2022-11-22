@@ -25,5 +25,5 @@ export const DivStyled = tw.div`
   flex
   flex-row
   justify-between
-  w-[25rem]
+  w-[30rem]
 `
