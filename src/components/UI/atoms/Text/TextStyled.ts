@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export interface Props {
-  color: string,
+  color?: string,
   fontFamily: string,
   fontSize: number,
   fontWeight?: number,
@@ -11,12 +11,17 @@ export interface Props {
   width?: string,
   lineHeight?: string,
   isStroke?: boolean,
-  strokeColor?: string  
+  strokeColor?: string,
+  isLinear?: boolean  
 }
 
 export const TextStyled = styled.div((props: Props) => [
   `${props.isStroke ? `-webkit-text-stroke: 1px ${props.strokeColor}` :
   ``};
+  ${props.isLinear ? 
+  `background: linear-gradient(to right, #D17F82 , #5A3BF8, black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;` : ``};
   color: ${props.color};
   font-family: ${props.fontFamily};
   font-size: ${props.fontSize}px;

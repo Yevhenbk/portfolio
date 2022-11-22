@@ -36,6 +36,7 @@ const Navbar: React.FC = () => {
         fontFamily='Share Tech Mono, serif'
         padding='.25rem .75rem'
         radius={3}
+        isAnimated={true}
       >
         Resume
       </Button>

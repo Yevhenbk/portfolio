@@ -12,7 +12,8 @@ export interface Props {
   hoverColor?: string,
   hoverBackground?: string,
   borderColor?: string,
-  margin?: string
+  margin?: string,
+  isAnimated?: boolean
 }
 
 export const ButtonStyled = styled.button((props: Props) => [`
@@ -30,7 +31,9 @@ export const ButtonStyled = styled.button((props: Props) => [`
     color: ${props.hoverColor};
     background: ${props.hoverBackground};
   }`,
-  tw`border-[1px]
-     ease-in 
-     duration-200`
+  tw`border-[1px]`,
+  props.isAnimated ?
+  tw`ease-in 
+     duration-200` :
+  ``
 ])

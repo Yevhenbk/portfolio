@@ -21,7 +21,7 @@ const HomeTemplate: React.FC = () => {
           <Text
             color='black'
             fontSize={21}
-            fontWeight={500}
+            fontWeight={600}
             fontFamily='Poppins, serif'
           >
             <p>Hey there,  my name is</p>
@@ -41,13 +41,14 @@ const HomeTemplate: React.FC = () => {
             fontFamily='Poppins, serif'
             fontWeight={900}
             lineHeight='1.25'
+            isLinear={true}
           >
             <h1>I build unique things for the web.</h1>
           </Text>
           <Text
             color='black'
             fontSize={21}
-            fontWeight={500}
+            fontWeight={600}
             fontFamily='Poppins, serif'
             width='30rem'
           >

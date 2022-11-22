@@ -6,7 +6,7 @@ interface Props {
 }
 
 export const NavbarStyled = styled.div((props: Props) => [
-  props.isWhite ? tw`bg-white/30 backdrop-blur-sm` 
+  props.isWhite ? tw`bg-white/70 backdrop-blur-sm` 
   : tw`bg-transparent`,
   tw`w-[100%]
      py-5
