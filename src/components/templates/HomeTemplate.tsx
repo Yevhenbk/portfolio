@@ -17,14 +17,15 @@ const HomeTemplate: React.FC = () => {
         align='center'
       >
         <Iframe />
-        <div className='w-[45rem] absolute top-40 left-20'>
+        <div className='w-[45rem] absolute top-40 left-20
+        2xl:top-[16rem] 2xl:left-60'>
           <Text
             color='black'
             fontSize={21}
             fontWeight={600}
             fontFamily='Poppins, serif'
           >
-            <p>Hey there,  my name is</p>
+            <p>Hey there! My name is</p>
           </Text>
           <Text
             color='black'
@@ -66,9 +67,8 @@ const HomeTemplate: React.FC = () => {
             fontWeight={500}
             padding='.75rem 2.5rem'
             fontSize={18}
-            hoverBackground='#5A3BF8'
-            hoverColor='white'
             margin='2rem 0 0'
+            isAnimated={true}
           >
             Contact me
           </Button>

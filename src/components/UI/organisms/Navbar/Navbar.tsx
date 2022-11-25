@@ -30,7 +30,7 @@ const Navbar: React.FC = () => {
         ))}
       </DivStyled>
       <DivStyled
-        width='10rem'
+        width='9.5rem'
       >
         <Button
           color='white'
@@ -46,20 +46,22 @@ const Navbar: React.FC = () => {
         >
           Resume
         </Button>
-        <Link
+        <div className='flex flex-row justify-between
+        w-[3.5rem] items-end'>
+          <Link
           fontSize={24}
           color='black' 
-          hoverColor='#E044DE'
-        >
-          <AiFillGithub />
-        </Link>
-        <Link
-          fontSize={24}
-          color='black'
-          hoverColor='#E044DE' 
-        >
-          <AiFillLinkedin />
-        </Link>
+          >
+            <AiFillGithub />
+          </Link>
+          <Link
+            fontSize={24}
+            color='black'
+ 
+          >
+            <AiFillLinkedin />
+          </Link>
+        </div>
       </DivStyled>
     </NavbarStyled>
   )
