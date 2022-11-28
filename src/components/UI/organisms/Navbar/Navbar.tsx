@@ -24,7 +24,7 @@ const Navbar: React.FC = () => {
             fontWeight={500}
             padding='.35rem .85rem'
             borderRadius='2px'
-            backgroundHover={window.scrollY >= 10 ?
+            backgroundHover={global.scrollY >= 10 ?
             '#fcfcfc90' : '#cacacaa5'}>
             <span className='text-[#5A3BF8]'>
               {item.number}.
@@ -57,7 +57,7 @@ const Navbar: React.FC = () => {
           color='black' 
           padding='.35rem'
           borderRadius='2px'
-          backgroundHover={window.scrollY >= 10 ?
+          backgroundHover={global.scrollY >= 10 ?
           '#fcfcfc90' : '#cacacaa5'}
           >
             <AiFillGithub />
@@ -67,7 +67,7 @@ const Navbar: React.FC = () => {
             color='black'
             padding='.35rem'
             borderRadius='2px'
-            backgroundHover={window.scrollY >= 10 ?
+            backgroundHover={global.scrollY >= 10 ?
             '#fcfcfc90' : '#cacacaa5'}
           >
             <AiFillLinkedin />

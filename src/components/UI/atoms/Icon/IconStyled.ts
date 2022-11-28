@@ -11,7 +11,9 @@ export interface Props {
   width?: number,
   height?: number,
   position?: string,
-  right?: string
+  right?: string,
+  transform?: string,
+  isAnimated?: boolean
 }
 
 export const IconStyled = styled.div((props: Props) => [`
@@ -27,11 +29,13 @@ export const IconStyled = styled.div((props: Props) => [`
   
   &:hover {
     background: ${props.hoverBackground};
+    transform: ${props.transform};
   }`,
-  tw`transition
+  props.isAnimated ? 
+    tw`transition
      ease-in-out
      duration-300 
      group-hover:transition 
      group-hover:ease-in-out
-     group-hover:duration-300`
+     group-hover:duration-300` : tw``
 ])

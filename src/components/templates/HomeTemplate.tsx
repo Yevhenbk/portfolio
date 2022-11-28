@@ -92,6 +92,8 @@ const HomeTemplate: React.FC = () => {
               right='-1rem'
               fontSize='1.125rem'
               color='black'
+              className='group-hover:rotate-[-45deg]'
+              isAnimated={true}
             >
               <GrContact />
             </Icon>
