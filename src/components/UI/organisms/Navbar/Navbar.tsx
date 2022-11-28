@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
     <NavbarStyled
     isWhite={ navbar ? true : false }>
       <DivStyled
-        width='30rem'
+        width='32rem'
       >
         {menuItems.map((item: any) => (
           <Link 
@@ -22,9 +22,9 @@ const Navbar: React.FC = () => {
             fonFamily='Share Tech Mono, sans'
             fontSize={16}
             fontWeight={500}
-            padding='.25rem .75rem'
+            padding='.35rem .85rem'
             borderRadius='2px'
-            backgroundHover='#cacaca'>
+            backgroundHover='#cacacaa5'>
             <span className='text-[#5A3BF8]'>
               {item.number}.
             </span>
@@ -56,7 +56,7 @@ const Navbar: React.FC = () => {
           color='black' 
           padding='.35rem'
           borderRadius='2px'
-          backgroundHover='#cacaca'
+          backgroundHover='#cacacaa5'
           >
             <AiFillGithub />
           </Link>
@@ -65,7 +65,7 @@ const Navbar: React.FC = () => {
             color='black'
             padding='.35rem'
             borderRadius='2px'
-            backgroundHover='#cacaca'
+            backgroundHover='#cacacaa5'
           >
             <AiFillLinkedin />
           </Link>
