@@ -8,9 +8,9 @@ export interface Props {
   fontSize?: number,
   fontWeight?: number,
   padding?: string,
-  radius?: string,
-  hoverColor?: string,
-  hoverBackground?: string
+  borderRadius?: string,
+  colorHover?: string,
+  backgroundHover?: string
 }
 
 export const LinkStyled = styled.div((props: Props) => [`
@@ -20,11 +20,11 @@ export const LinkStyled = styled.div((props: Props) => [`
   font-size: ${props.fontSize}px;
   font-weight: ${props.fontWeight};
   background: ${props.background};
-  border-radius: ${props.radius};
+  border-radius: ${props.borderRadius};
   
   &:hover {
-    background: ${props.hoverBackground};
-    color: ${props.hoverColor};
+    background: ${props.backgroundHover};
+    color: ${props.colorHover};
   }`,
   tw`cursor-pointer`
 ])

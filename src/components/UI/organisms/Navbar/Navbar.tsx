@@ -21,7 +21,10 @@ const Navbar: React.FC = () => {
             background='transparent'
             fonFamily='Share Tech Mono, sans'
             fontSize={16}
-            fontWeight={500}>
+            fontWeight={500}
+            padding='.25rem .75rem'
+            borderRadius='2px'
+            backgroundHover='#cacaca'>
             <span className='text-[#5A3BF8]'>
               {item.number}.
             </span>
@@ -46,18 +49,23 @@ const Navbar: React.FC = () => {
         >
           Resume
         </Button>
-        <div className='flex flex-row w-[4rem]
+        <div className='flex flex-row w-[4.75rem]
         justify-between items-end'>
           <Link
           fontSize={24}
           color='black' 
+          padding='.35rem'
+          borderRadius='2px'
+          backgroundHover='#cacaca'
           >
             <AiFillGithub />
           </Link>
           <Link
             fontSize={24}
             color='black'
- 
+            padding='.35rem'
+            borderRadius='2px'
+            backgroundHover='#cacaca'
           >
             <AiFillLinkedin />
           </Link>
