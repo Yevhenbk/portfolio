@@ -22,7 +22,7 @@ const HomeTemplate: React.FC = () => {
         <div 
           className='
           w-[45rem] absolute 
-          top-40 left-20
+          top-40 left-32
           min-[1736px]:top-[16rem] min-[1736px]:left-60'
         >
           <Text
