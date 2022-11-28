@@ -30,7 +30,7 @@ const Navbar: React.FC = () => {
         ))}
       </DivStyled>
       <DivStyled
-        width='9.5rem'
+        width='10rem'
       >
         <Button
           color='white'

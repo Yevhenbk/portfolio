@@ -13,7 +13,13 @@ export interface Props {
   hoverBackground?: string,
   borderColor?: string,
   margin?: string,
-  isAnimated?: boolean
+  isAnimated?: boolean,
+  display?: string,
+  flexDirection?: string,
+  justify?: string,
+  items?: string,
+  width?: string,
+  hoverWidth?: string
 }
 
 export const ButtonStyled = styled.button((props: Props) => [`
@@ -26,10 +32,16 @@ export const ButtonStyled = styled.button((props: Props) => [`
   border-radius: ${props.radius}px;
   border-color: ${props.borderColor};
   margin: ${props.margin};
+  display: ${props.display};
+  flex-directoin: ${props.flexDirection};
+  justify-content: ${props.justify};
+  align-items: ${props.items};
+  width: ${props.width};
   
   &:hover {
     color: ${props.hoverColor};
     background: ${props.hoverBackground};
+    width: ${props.hoverWidth};
   }`,
   tw`border-[1px]`,
   props.isAnimated ?

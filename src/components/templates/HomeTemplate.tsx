@@ -5,6 +5,8 @@ import Wrapper from '@atoms/Wrapper/Wrapper'
 import Text from '@atoms/Text/Text'
 import Button from '@molecules/Button/Button'
 import Iframe from '@atoms/Iframe/Iframe'
+import { GrContact } from 'react-icons/gr'
+import { BiLinkExternal } from 'react-icons/bi'
 
 const HomeTemplate: React.FC = () => {
   return (
@@ -62,15 +64,52 @@ const HomeTemplate: React.FC = () => {
           <Button
             color='white'
             background='black'
-            radius={100}
+            radius={50}
             fontFamily='Poppins, serif'
             fontWeight={500}
-            padding='.75rem 2.5rem'
+            padding='.5rem 1.5rem'
             fontSize={18}
             margin='2rem 0 0'
             isAnimated={true}
+            display='flex'
+            flexDirection='row'
+            justify='space-between'
+            items='center'
+            width='13rem'
+            hoverWidth='15rem'
+            className='group'
           >
             Contact me
+            <span 
+              className='
+              bg-white
+              w-[34px] h-[34px]
+              p-2 rounded-full
+              relative -right-4
+              transition
+              ease-in-out
+              duration-300 
+              group-hover:transition 
+              group-hover:ease-in-out
+              group-hover:duration-300
+              group-hover:rotate-90'>
+                <GrContact 
+                  className='
+                  text-lg
+                  text-black 
+                  group-hover:hidden
+                  '
+                />
+                <BiLinkExternal 
+                  className='
+                  hidden
+                  text-lg
+                  text-black 
+                  -rotate-90
+                  group-hover:block
+                  '
+                />
+            </span>
           </Button>
         </div>
       </Wrapper>
