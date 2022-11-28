@@ -18,7 +18,7 @@ const HomeTemplate: React.FC = () => {
         direction='row'
         align='center'
       >
-        <Iframe />
+        {/* <Iframe /> */}
         <div className='w-[45rem] absolute top-40 left-20
         2xl:top-[16rem] 2xl:left-60'>
           <Text
