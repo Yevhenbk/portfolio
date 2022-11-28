@@ -75,8 +75,8 @@ const HomeTemplate: React.FC = () => {
             flexDirection='row'
             justify='space-between'
             items='center'
-            width='13rem'
-            hoverWidth='15rem'
+            width='14rem'
+            hoverWidth='16rem'
             className='group'
           >
             Contact me
@@ -91,22 +91,12 @@ const HomeTemplate: React.FC = () => {
               duration-300 
               group-hover:transition 
               group-hover:ease-in-out
-              group-hover:duration-300
-              group-hover:rotate-90'>
+              group-hover:duration-300'
+            >
                 <GrContact 
                   className='
                   text-lg
-                  text-black 
-                  group-hover:hidden
-                  '
-                />
-                <BiLinkExternal 
-                  className='
-                  hidden
-                  text-lg
-                  text-black 
-                  -rotate-90
-                  group-hover:block
+                  text-black
                   '
                 />
             </span>
