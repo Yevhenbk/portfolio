@@ -5,6 +5,7 @@ import Wrapper from '@atoms/Wrapper/Wrapper'
 import Text from '@atoms/Text/Text'
 import Button from '@molecules/Button/Button'
 import Iframe from '@atoms/Iframe/Iframe'
+import Icon from '@atoms/Icon/Icon'
 import { GrContact } from 'react-icons/gr'
 
 const HomeTemplate: React.FC = () => {
@@ -18,8 +19,12 @@ const HomeTemplate: React.FC = () => {
         align='center'
       >
         <Iframe />
-        <div className='w-[45rem] absolute top-40 left-20
-        2xl:top-[16rem] 2xl:left-60'>
+        <div 
+          className='
+          w-[45rem] absolute 
+          top-40 left-20
+          2xl:top-[16rem] 2xl:left-60'
+        >
           <Text
             color='black'
             fontSize={21}
@@ -79,26 +84,19 @@ const HomeTemplate: React.FC = () => {
             className='group'
           >
             Contact me
-            <span 
-              className='
-              bg-white
-              w-[34px] h-[34px]
-              p-2 rounded-full
-              relative -right-4
-              transition
-              ease-in-out
-              duration-300 
-              group-hover:transition 
-              group-hover:ease-in-out
-              group-hover:duration-300'
+            <Icon 
+              background='white'
+              width={34}
+              height={34}
+              padding='0.5rem'
+              borderRadius='50%'
+              position='relative'
+              right='-1rem'
+              fontSize='1.125rem'
+              color='black'
             >
-                <GrContact 
-                  className='
-                  text-lg
-                  text-black
-                  '
-                />
-            </span>
+              <GrContact />
+            </Icon>
           </Button>
         </div>
       </Wrapper>
