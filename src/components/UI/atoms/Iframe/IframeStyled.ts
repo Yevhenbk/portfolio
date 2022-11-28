@@ -5,7 +5,7 @@ export const IframeStyled = tw.div`
   absolute
   -right-16 
   -top-32
-  min-[1236px]:top-2 min-[1236px]:right-32
+  min-[1736px]:top-2 min-[1736px]:right-32
   xl:-top-20 xl:-right-12
   md:-top-12
 `
