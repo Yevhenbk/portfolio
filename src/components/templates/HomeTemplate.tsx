@@ -80,8 +80,6 @@ const HomeTemplate: React.FC = () => {
             justify='space-between'
             items='center'
             width='14rem'
-            hoverWidth='16rem'
-            className='group'
           >
             Contact me
             <Icon 

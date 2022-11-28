@@ -30,7 +30,7 @@ const Navbar: React.FC = () => {
         ))}
       </DivStyled>
       <DivStyled
-        width='10rem'
+        width='11.5rem'
       >
         <Button
           color='white'
@@ -46,8 +46,8 @@ const Navbar: React.FC = () => {
         >
           Resume
         </Button>
-        <div className='flex flex-row justify-between
-        w-[3.5rem] items-end'>
+        <div className='flex flex-row w-[4rem]
+        justify-between items-end'>
           <Link
           fontSize={24}
           color='black' 

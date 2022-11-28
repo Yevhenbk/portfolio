@@ -4,15 +4,14 @@ import { ButtonStyled, Props as ButtonStyledProps } from './ButtonStyled'
 interface Props
   extends ButtonStyledProps {
     children: React.ReactNode,
-    onClick?: React.MouseEventHandler,
-    className?: string
+    onClick?: React.MouseEventHandler
   }
 
 const Button: React.FC<Props> = (props) => {
   return (
-    <ButtonStyled 
+    <ButtonStyled
       onClick={props.onClick} 
-      className={props.className}
+      className='group'
       {...props}
     >
       {props.children}
