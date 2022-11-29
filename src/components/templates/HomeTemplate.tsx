@@ -74,7 +74,7 @@ const HomeTemplate: React.FC = () => {
             padding='.5rem 1.5rem'
             fontSize={18}
             margin='2rem 0 0'
-            isAnimated={true}
+            isAnimated={false}
             display='flex'
             flexDirection='row'
             justify='space-between'
@@ -92,7 +92,8 @@ const HomeTemplate: React.FC = () => {
               right='-1rem'
               fontSize='1.125rem'
               color='black'
-              className='group-hover:rotate-[-45deg]'
+              className='
+              group-hover:rotate-[-45deg]'
               isAnimated={true}
             >
               <GrContact />
