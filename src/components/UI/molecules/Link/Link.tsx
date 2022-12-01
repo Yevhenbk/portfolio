@@ -3,12 +3,16 @@ import { LinkStyled, Props as LinkStyledProps } from './LinkStyled'
 
 interface Props
   extends LinkStyledProps {
+    myKey?: number,
     children: React.ReactNode,
   }
 
 const Link: React.FC<Props> = (props) => {
   return (
-    <LinkStyled {...props}>
+    <LinkStyled 
+      key={props.myKey}
+      {...props}
+    >
       {props.children}  
     </LinkStyled>
   )

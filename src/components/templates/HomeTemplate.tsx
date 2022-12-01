@@ -6,7 +6,7 @@ import Text from '@atoms/Text/Text'
 import Button from '@molecules/Button/Button'
 import Iframe from '@atoms/Iframe/Iframe'
 import Icon from '@atoms/Icon/Icon'
-import { GrContact } from 'react-icons/gr'
+import { RiMessage2Line } from 'react-icons/ri'
 
 const HomeTemplate: React.FC = () => {
   return (
@@ -23,7 +23,8 @@ const HomeTemplate: React.FC = () => {
           className='
           w-[45rem] absolute 
           top-40 left-32
-          min-[1736px]:top-[16rem] min-[1736px]:left-60'
+          min-[1736px]:top-[16rem] 
+          min-[1736px]:left-60'
         >
           <Text
             color='black'
@@ -74,12 +75,12 @@ const HomeTemplate: React.FC = () => {
             padding='.5rem 1.5rem'
             fontSize={18}
             margin='2rem 0 0'
-            isAnimated={false}
+            isAnimated={true}
             display='flex'
             flexDirection='row'
             justify='space-between'
             items='center'
-            width='14rem'
+            width='13rem'
           >
             Contact me
             <Icon 
@@ -96,11 +97,33 @@ const HomeTemplate: React.FC = () => {
               group-hover:rotate-[-45deg]'
               isAnimated={true}
             >
-              <GrContact />
+              <RiMessage2Line />
             </Icon>
           </Button>
         </div>
       </Wrapper>
+      <div
+        className='
+        pt-[45rem] 
+        2xl:pt-[48rem]'
+      >
+        <Wrapper
+          justify='center'
+          direction='row'
+          align='center'
+        >
+          <Text 
+            color='black'
+            fontSize={60}  
+            fontFamily='Poppins, serif'
+            fontWeight={900}
+            lineHeight='1.25'
+            zIndex={9}
+          >
+            My latest works
+          </Text>
+        </Wrapper>
+      </div>
     </main>
   )
 }

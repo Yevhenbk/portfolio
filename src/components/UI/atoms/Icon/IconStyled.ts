@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import tw from 'twin.macro'
 
 export interface Props {
-  color: string,
+  color?: string,
   background?: string,
   borderRadius?: string,
   hoverBackground?: string,

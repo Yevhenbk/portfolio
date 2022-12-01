@@ -3,11 +3,12 @@ import { NavbarStyled, DivStyled } from './NavbarStyled'
 import { Context } from '../../../../store/context'
 import Link from '@molecules/Link/Link'
 import Button from '@molecules/Button/Button'
+import { menuItems, Props as menuItemsProps } from '../../../../../static/utils/MenuItems'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 
 const Navbar: React.FC = () => {
 
-  const { navbar, menuItems } = React.useContext(Context) 
+  const { navbar } = React.useContext(Context) 
 
   return (
     <NavbarStyled
@@ -15,8 +16,10 @@ const Navbar: React.FC = () => {
       <DivStyled
         width='32rem'
       >
-        {menuItems.map((item: any) => (
+        {menuItems.map((item: menuItemsProps ) => (
           <Link 
+            key={item.id}
+            myKey={item.id}
             color={ navbar ? 'black' : '#6E6E6E' }
             background='transparent'
             fonFamily='Share Tech Mono, sans'
@@ -50,8 +53,13 @@ const Navbar: React.FC = () => {
         >
           Resume
         </Button>
-        <div className='flex flex-row w-[4.75rem]
-        justify-between items-end'>
+        <div 
+          className='
+          flex flex-row 
+          w-[4.75rem]
+          justify-between 
+          items-end'
+        >
           <Link
           fontSize={24}
           color='black' 
