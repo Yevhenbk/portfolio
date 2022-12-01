@@ -1,17 +1,17 @@
 import styled from 'styled-components'
 
 export interface Props {
-  justify: string,
+  justifyContent: string,
   direction: string,
-  align?: string,
+  alignItems?: string,
   padding?: string 
 }
 
 export const WrapperStyled = styled.div((props: Props) => [`
   display: flex;
   flex-direction: ${props.direction};
-  justify-content: ${props.justify};
-  aling-items: ${props.align};
+  justify-content: ${props.justifyContent};
+  align-items: ${props.alignItems};
   padding: ${props.padding};
   width: 100%;`,
 ])

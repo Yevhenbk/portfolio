@@ -6,6 +6,7 @@ import Text from '@atoms/Text/Text'
 import Button from '@molecules/Button/Button'
 import Iframe from '@atoms/Iframe/Iframe'
 import Icon from '@atoms/Icon/Icon'
+import ProjectCard from '@molecules/ProjectCard/ProjectCard'
 import { RiMessage2Line } from 'react-icons/ri'
 
 const HomeTemplate: React.FC = () => {
@@ -14,9 +15,9 @@ const HomeTemplate: React.FC = () => {
       <Layout title='Portfolio | Yevhenbk' />
       <Navbar />  
       <Wrapper
-        justify='space-around'
+        justifyContent='space-around'
         direction='row'
-        align='center'
+        alignItems='center'
       >
         <Iframe />
         <div 
@@ -104,13 +105,14 @@ const HomeTemplate: React.FC = () => {
       </Wrapper>
       <div
         className='
-        pt-[45rem] 
-        2xl:pt-[48rem]'
+        pt-[52rem] 
+        2xl:pt-[57rem]'
       >
         <Wrapper
-          justify='center'
-          direction='row'
-          align='center'
+          justifyContent='center'
+          direction='column'
+          alignItems='center'
+          padding='0 0 4rem'
         >
           <Text 
             color='black'
@@ -122,6 +124,19 @@ const HomeTemplate: React.FC = () => {
           >
             My latest works
           </Text>
+          <div
+            className='
+            flex
+            flex-row
+            justify-around
+            items-center
+            w-[100%]
+            pt-[6rem]'
+          >
+            <ProjectCard />
+            <ProjectCard />
+            <ProjectCard />
+          </div>
         </Wrapper>
       </div>
     </main>
