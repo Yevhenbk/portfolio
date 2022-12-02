@@ -108,7 +108,7 @@ const HomeTemplate: React.FC = () => {
       <div
         className='
         pt-[52rem] 
-        2xl:pt-[57rem]'
+        min-[1736px]:pt-[57rem]'
       >
         <Wrapper
           justifyContent='center'
