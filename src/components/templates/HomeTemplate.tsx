@@ -162,7 +162,7 @@ const HomeTemplate: React.FC = () => {
             items-center
             w-[100%]
             pt-[4rem]
-            2xl:w-[80vw]'
+            min-[1736px]:w-[80vw]'
           >
             <ProjectCard
               href='https://cloudchain.vercel.app'
