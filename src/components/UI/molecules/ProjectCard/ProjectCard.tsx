@@ -1,4 +1,4 @@
-import { CardStyled, Props as CardStyledProps } from './ProjectCardStyled'
+import { CardStyled, WrapperStyled, Props as CardStyledProps } from './ProjectCardStyled'
 import { useSpring, config } from 'react-spring'
 
 interface Props
@@ -20,9 +20,10 @@ const ProjectCard: React.FC<Props> = (props) => {
       style={{
           transform: prop.xys.interpolate(trans)
       }}
-      {...props}
     >
-      {props.children}
+      <WrapperStyled {...props}>
+        {props.children}
+      </WrapperStyled>
     </CardStyled>
   )
 }

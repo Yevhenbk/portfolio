@@ -131,7 +131,8 @@ const HomeTemplate: React.FC = () => {
             justify-around
             items-center
             w-[100%]
-            pt-[6rem]'
+            pt-[6rem]
+            2xl:w-[80vw]'
           >
             <ProjectCard />
             <ProjectCard />
