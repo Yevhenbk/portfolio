@@ -12,14 +12,14 @@ export const CardStyled = tw(animated.div)`
   justify-center
   h-[30rem]
   w-[25rem]
-  bg-white/40
-  backdrop-blur-sm
+  bg-white/50
+  backdrop-blur-xl
   rounded-xl
   overflow-hidden
   border-solid
   border-[1px]
   border-[rgba(255, 255, 255, 0.7)]
-  z-1
+  z-10
 `
 
 export const WrapperStyled = styled.a((props: Props) => [`
