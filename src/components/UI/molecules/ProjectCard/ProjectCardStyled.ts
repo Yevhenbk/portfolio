@@ -23,7 +23,9 @@ export const CardStyled = tw(animated.div)`
 `
 
 export const WrapperStyled = styled.a((props: Props) => [`
-  background: ${props.background};
   width: 25rem;
   height: 30rem;
+  background: ${props.background};
+  background-repeat: no-repeat;
+  object-fit: cover;
 `])

@@ -24,7 +24,7 @@ const HomeTemplate: React.FC = () => {
         <Iframe />
         <div 
           className='
-          w-[45rem] absolute 
+          w-[35rem] absolute 
           top-40 left-32
           min-[1736px]:top-[16rem] 
           min-[1736px]:left-60'
@@ -39,7 +39,7 @@ const HomeTemplate: React.FC = () => {
           </Text>
           <Text
             color='black'
-            fontSize={60}
+            fontSize={52}
             fontFamily='Poppins, serif'
             fontWeight={900}
             lineHeight='1.25'
@@ -48,7 +48,7 @@ const HomeTemplate: React.FC = () => {
           </Text>
           <Text
             color='black'
-            fontSize={60}
+            fontSize={52}
             fontFamily='Poppins, serif'
             fontWeight={900}
             lineHeight='1.25'
@@ -88,8 +88,8 @@ const HomeTemplate: React.FC = () => {
             Contact me
             <Icon 
               background='white'
-              width={34}
-              height={34}
+              width={35}
+              height={35}
               padding='0.5rem'
               borderRadius='50%'
               position='relative'
@@ -124,7 +124,7 @@ const HomeTemplate: React.FC = () => {
           </div>
           <Text 
             color='black'
-            fontSize={60}  
+            fontSize={52}  
             fontFamily='Poppins, serif'
             fontWeight={900}
             lineHeight='1.25'
@@ -166,12 +166,15 @@ const HomeTemplate: React.FC = () => {
           >
             <ProjectCard
               href='https://cloudchain.vercel.app'
+              background='url(../../../static/img/bubblePeach.svg)'
             />
             <ProjectCard
               href='https://github.com/Yevhenbk/los-tercios'
+              background='url(../../../static/img/bubblePurple.svg)'
             />
             <ProjectCard 
               href='https://github.com/Yevhenbk/worksut-landing'
+              background='url(../../../static/img/bubblePink.svg)'
             />
           </div>
         </Wrapper>
