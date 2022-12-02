@@ -44,7 +44,7 @@ const Navbar: React.FC = () => {
           background='#5A3BF8'
           hoverBackground='transparent'
           hoverColor='#5A3BF8'
-          borderColor='#5A3BF8'
+          border='1px solid #5A3BF8'
           fontSize={16}
           fontFamily='Share Tech Mono, serif'
           padding='.25rem .75rem'

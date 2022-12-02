@@ -11,7 +11,7 @@ export interface Props {
   radius: number,
   hoverColor?: string,
   hoverBackground?: string,
-  borderColor?: string,
+  border?: string,
   margin?: string,
   isAnimated?: boolean,
   display?: string,
@@ -31,7 +31,7 @@ export const ButtonStyled = styled.button((props: Props) => [`
   padding: ${props.padding};
   border: none;
   border-radius: ${props.radius}px;
-  border-color: ${props.borderColor};
+  border: ${props.border};
   margin: ${props.margin};
   display: ${props.display};
   flex-directoin: ${props.flexDirection};
