@@ -25,6 +25,7 @@ export const LinkStyled = styled.a((props: Props) => [`
   border-radius: ${props.borderRadius};
   border: none;
   border: ${props.border};
+  z-index: 8;
   
   &:hover {
     background: ${props.hoverBackground};

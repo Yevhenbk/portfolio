@@ -19,6 +19,7 @@ export const CardStyled = tw(animated.div)`
   border-solid
   border-[1px]
   border-[rgba(255, 255, 255, 0.7)]
+  z-1
 `
 
 export const WrapperStyled = styled.a((props: Props) => [`

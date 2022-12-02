@@ -8,6 +8,7 @@ import Iframe from '@atoms/Iframe/Iframe'
 import Link from '@molecules/Link/Link'
 import Icon from '@atoms/Icon/Icon'
 import ProjectCard from '@molecules/ProjectCard/ProjectCard'
+import Background from '@atoms/Background/Background'
 import { RiMessage2Line } from 'react-icons/ri'
 
 const HomeTemplate: React.FC = () => {
@@ -115,6 +116,12 @@ const HomeTemplate: React.FC = () => {
           alignItems='center'
           padding='0 0 4rem'
         >
+          <div className='w-0 h-0'>
+            <Background 
+              top='55rem'
+              background='url(../../../static/img/circles.svg)'
+            />
+          </div>
           <Text 
             color='black'
             fontSize={60}  
