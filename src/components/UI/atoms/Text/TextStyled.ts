@@ -13,7 +13,8 @@ export interface Props {
   isStroke?: boolean,
   strokeColor?: string,
   isLinear?: boolean,
-  zIndex?: number  
+  zIndex?: number,
+  textAlign?: string  
 }
 
 export const TextStyled = styled.div((props: Props) => [
@@ -33,4 +34,5 @@ export const TextStyled = styled.div((props: Props) => [
   width: ${props.width};
   line-height: ${props.lineHeight};
   z-index: ${props.zIndex};
+  text-align: ${props.textAlign};
 `])

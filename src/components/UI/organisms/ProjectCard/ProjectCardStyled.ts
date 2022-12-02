@@ -28,4 +28,14 @@ export const WrapperStyled = styled.a((props: Props) => [`
   background: ${props.background};
   background-repeat: no-repeat;
   object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+
+  &:hover {
+    span {
+      color: #5E3EF4;
+    }
+  }
 `])

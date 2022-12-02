@@ -7,9 +7,13 @@ import Button from '@molecules/Button/Button'
 import Iframe from '@atoms/Iframe/Iframe'
 import Link from '@molecules/Link/Link'
 import Icon from '@atoms/Icon/Icon'
-import ProjectCard from '@molecules/ProjectCard/ProjectCard'
+import ProjectCard from '@organisms/ProjectCard/ProjectCard'
 import Background from '@atoms/Background/Background'
 import { RiMessage2Line } from 'react-icons/ri'
+import { FaReact } from 'react-icons/fa'
+import { SiNextdotjs, SiTailwindcss, SiSolidity, SiEthereum,
+  SiCss3, SiBootstrap, SiTypescript, SiStyledcomponents,
+  SiAzuredevops } from 'react-icons/si'
 
 const HomeTemplate: React.FC = () => {
   return (
@@ -165,17 +169,49 @@ const HomeTemplate: React.FC = () => {
             min-[1736px]:w-[80vw]'
           >
             <ProjectCard
+              name='Cloudchain'
+              headerColor='#9B60B8'
+              description='Cloudchain is a web application where you can 
+              transfer crypto assets all around the globe.'
               href='https://cloudchain.vercel.app'
-              background='url(../../../static/img/bubblePeach.svg)'
-            />
-            <ProjectCard
-              href='https://github.com/Yevhenbk/los-tercios'
               background='url(../../../static/img/bubblePurple.svg)'
-            />
+            >
+              <FaReact />
+              <SiNextdotjs />
+              <SiTypescript />
+              <SiTailwindcss />
+              <SiStyledcomponents />
+              <SiSolidity />
+              <SiEthereum />
+            </ProjectCard>
+            <ProjectCard
+              name='Los Tercios'
+              headerColor='#efa50e'
+              description='Los Tercios is a fullstack project developed for 
+              people getting familiar with weighlifting and are intersted 
+              in lifting in Madrid.
+              (Currently under construction)'
+              href='https://github.com/Yevhenbk/los-tercios'
+              background='url(../../../static/img/bubblePeach.svg)'
+            >
+              <FaReact />
+              <SiTypescript />
+              <SiCss3 />
+              <SiBootstrap />
+            </ProjectCard>
             <ProjectCard 
+              name='Worksut'
+              headerColor='#FF524A'
+              description='Responsive, fully animated desktop-only landing 
+              page developed for Worksut startup'
               href='https://github.com/Yevhenbk/worksut-landing'
               background='url(../../../static/img/bubblePink.svg)'
-            />
+            >
+              <FaReact />
+              <SiTypescript />
+              <SiStyledcomponents />
+              <SiAzuredevops />
+            </ProjectCard>
           </div>
         </Wrapper>
       </div>

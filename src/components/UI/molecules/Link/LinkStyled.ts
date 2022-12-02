@@ -26,13 +26,12 @@ export const LinkStyled = styled.a((props: Props) => [`
   border: none;
   border: ${props.border};
   z-index: 8;
+  cursor: pointer;
   
   &:hover {
     background: ${props.hoverBackground};
     color: ${props.hoverColor};
   }`,
-  tw`cursor-pointer`,
-  tw`border-[1px]`,
   props.isAnimated ?
   tw`ease-in 
      duration-200` :

@@ -44,7 +44,6 @@ export const ButtonStyled = styled.button((props: Props) => [`
     background: ${props.hoverBackground};
     width: ${props.hoverWidth};
   }`,
-  tw`border-[1px]`,
   props.isAnimated ?
   tw`ease-in 
      duration-200` :
