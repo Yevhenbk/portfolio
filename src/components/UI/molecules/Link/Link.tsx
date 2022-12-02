@@ -5,12 +5,15 @@ interface Props
   extends LinkStyledProps {
     myKey?: number,
     children: React.ReactNode,
+    href?: string
   }
 
 const Link: React.FC<Props> = (props) => {
   return (
     <LinkStyled 
       key={props.myKey}
+      href={props.href}
+      target='_blank'
       {...props}
     >
       {props.children}  

@@ -5,6 +5,7 @@ import Wrapper from '@atoms/Wrapper/Wrapper'
 import Text from '@atoms/Text/Text'
 import Button from '@molecules/Button/Button'
 import Iframe from '@atoms/Iframe/Iframe'
+import Link from '@molecules/Link/Link'
 import Icon from '@atoms/Icon/Icon'
 import ProjectCard from '@molecules/ProjectCard/ProjectCard'
 import { RiMessage2Line } from 'react-icons/ri'
@@ -124,6 +125,28 @@ const HomeTemplate: React.FC = () => {
           >
             My latest works
           </Text>
+          <Text 
+            color='black'
+            fontSize={21}
+            fontWeight={600}
+            fontFamily='Poppins, serif'
+            lineHeight='2.5'
+            zIndex={9}
+          >
+            *Includes my personal, and professional projects*
+          </Text>
+          <Link
+            fontFamily='Poppins, serif'
+            borderRadius='50px'
+            border='1px solid black'
+            padding='.35rem 1rem'
+            hoverBackground='black'
+            hoverColor='white'
+            isAnimated={true}
+            href='https://github.com/Yevhenbk'
+          >
+            See all the works
+          </Link>
           <div
             className='
             flex
@@ -131,12 +154,18 @@ const HomeTemplate: React.FC = () => {
             justify-around
             items-center
             w-[100%]
-            pt-[6rem]
+            pt-[4rem]
             2xl:w-[80vw]'
           >
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
+            <ProjectCard
+              href='https://cloudchain.vercel.app'
+            />
+            <ProjectCard
+              href='https://github.com/Yevhenbk/los-tercios'
+            />
+            <ProjectCard 
+              href='https://github.com/Yevhenbk/worksut-landing'
+            />
           </div>
         </Wrapper>
       </div>

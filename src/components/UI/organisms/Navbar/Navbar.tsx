@@ -22,13 +22,13 @@ const Navbar: React.FC = () => {
             myKey={item.id}
             color={ navbar ? 'black' : '#6E6E6E' }
             background='transparent'
-            fonFamily='Share Tech Mono, sans'
+            fontFamily='Share Tech Mono, sans'
             fontSize={16}
             fontWeight={500}
             padding='.35rem .85rem'
             borderRadius='2px'
             hoverBackground={global.scrollY >= 10 ?
-            '#fcfcfc90' : '#cacacaa5'}>
+            '#fff' : '#cacacaa9'}>
             <span className='text-[#5A3BF8]'>
               {item.number}.
             </span>
@@ -66,7 +66,7 @@ const Navbar: React.FC = () => {
           padding='.35rem'
           borderRadius='2px'
           hoverBackground={global.scrollY >= 10 ?
-          '#fcfcfc90' : '#cacacaa5'}
+          '#fff' : '#cacacaa9'}
           >
             <AiFillGithub />
           </Link>

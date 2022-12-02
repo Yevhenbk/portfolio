@@ -12,7 +12,7 @@ export const CardStyled = tw(animated.div)`
   justify-center
   h-[30rem]
   w-[25rem]
-  bg-white/50
+  bg-white/40
   backdrop-blur-sm
   rounded-xl
   overflow-hidden
@@ -21,7 +21,7 @@ export const CardStyled = tw(animated.div)`
   border-[rgba(255, 255, 255, 0.7)]
 `
 
-export const WrapperStyled = styled.div((props: Props) => [`
+export const WrapperStyled = styled.a((props: Props) => [`
   background: ${props.background};
   width: 25rem;
   height: 30rem;

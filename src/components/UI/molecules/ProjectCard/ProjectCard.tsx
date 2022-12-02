@@ -4,6 +4,7 @@ import { useSpring, config } from 'react-spring'
 interface Props
   extends CardStyledProps {
     children?: React.ReactNode,
+    href?: string
   }
 
 const calc = (x: any, y: any) => [-(y - window.innerHeight / 2) / 40, (x - window.innerWidth / 2) / 40, 1]
@@ -21,7 +22,11 @@ const ProjectCard: React.FC<Props> = (props) => {
           transform: prop.xys.interpolate(trans)
       }}
     >
-      <WrapperStyled {...props}>
+      <WrapperStyled 
+        href={props.href}
+        target='_blank'
+        {...props}
+      >
         {props.children}
       </WrapperStyled>
     </CardStyled>

@@ -29,6 +29,7 @@ export const ButtonStyled = styled.button((props: Props) => [`
   font-weight: ${props.fontWeight};
   font-family: ${props.fontFamily};
   padding: ${props.padding};
+  border: none;
   border-radius: ${props.radius}px;
   border-color: ${props.borderColor};
   margin: ${props.margin};
