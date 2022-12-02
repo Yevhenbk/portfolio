@@ -47,12 +47,11 @@ const HomeTemplate: React.FC = () => {
             <h1>Yevhen Balahutrak.</h1>
           </Text>
           <Text
-            color='rgba(0, 0, 0, 0.65)'
+            color='black'
             fontSize={60}
             fontFamily='Poppins, serif'
             fontWeight={900}
             lineHeight='1.25'
-            isLinear={true}
           >
             <h1>I build unique things for the web.</h1>
           </Text>
@@ -71,7 +70,7 @@ const HomeTemplate: React.FC = () => {
           </Text>
           <Button
             color='white'
-            background='black'
+            background='linear-gradient(to left, #D17F82, #5A3BF8)'
             radius={50}
             fontFamily='Poppins, serif'
             fontWeight={500}
@@ -84,6 +83,7 @@ const HomeTemplate: React.FC = () => {
             justify='space-between'
             items='center'
             width='13rem'
+            hoverBackground='linear-gradient(to left, #D17F82, #9B60B8)'
           >
             Contact me
             <Icon 
@@ -118,8 +118,8 @@ const HomeTemplate: React.FC = () => {
         >
           <div className='w-0 h-0'>
             <Background 
-              top='55rem'
-              background='url(../../../static/img/circles.svg)'
+              top='60rem'
+              background='url(../../../static/img/waves.svg)'
             />
           </div>
           <Text 

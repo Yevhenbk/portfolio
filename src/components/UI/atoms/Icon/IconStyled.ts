@@ -26,6 +26,7 @@ export const IconStyled = styled.div((props: Props) => [`
   height: ${props.height}px;
   position: ${props.position};
   right: ${props.right};
+  overflow: hidden;
   
   &:hover {
     background: ${props.hoverBackground};
@@ -34,8 +35,8 @@ export const IconStyled = styled.div((props: Props) => [`
   props.isAnimated ? 
     tw`transition
      ease-in-out
-     duration-300 
+     duration-200 
      group-hover:transition 
      group-hover:ease-in-out
-     group-hover:duration-300` : tw``
+     group-hover:duration-200` : tw``
 ])

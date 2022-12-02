@@ -13,9 +13,10 @@ export const BackgroundStyled = styled.div((props: Props) => [`
   z-index: 1;
   `,
   tw`
-     w-[100%] 
+     w-[100vw] 
      h-[100%] 
-     max-h-[50rem]
      left-0
+     object-cover
+     bg-no-repeat
   `  
 ])
