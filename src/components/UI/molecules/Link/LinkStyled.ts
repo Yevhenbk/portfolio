@@ -12,7 +12,8 @@ export interface Props {
   borderRadius?: string,
   hoverColor?: string,
   hoverBackground?: string,
-  isAnimated?: boolean
+  isAnimated?: boolean,
+  margin?: string
 }
 
 export const LinkStyled = styled.a((props: Props) => [`
@@ -27,6 +28,7 @@ export const LinkStyled = styled.a((props: Props) => [`
   border: ${props.border};
   z-index: 8;
   cursor: pointer;
+  margin: ${props.margin};
   
   &:hover {
     background: ${props.hoverBackground};

@@ -73,6 +73,7 @@ const ProjectCard: React.FC<Props> = (props) => {
             flex
             flex-row
             justify-start
+            items-center
             gap-[1rem]
             pt-[1rem]'
           >

@@ -154,6 +154,7 @@ const HomeTemplate: React.FC = () => {
             hoverBackground='black'
             hoverColor='white'
             isAnimated={true}
+            margin='.5rem 0 0'
             href='https://github.com/Yevhenbk'
           >
             See all the works
@@ -180,7 +181,7 @@ const HomeTemplate: React.FC = () => {
               <SiNextdotjs />
               <SiTypescript />
               <SiTailwindcss />
-              <SiStyledcomponents />
+              <SiStyledcomponents className='text-3xl' />
               <SiSolidity />
               <SiEthereum />
             </ProjectCard>
@@ -209,7 +210,7 @@ const HomeTemplate: React.FC = () => {
             >
               <FaReact />
               <SiTypescript />
-              <SiStyledcomponents />
+              <SiStyledcomponents className='text-3xl' />
               <SiAzuredevops />
             </ProjectCard>
           </div>
