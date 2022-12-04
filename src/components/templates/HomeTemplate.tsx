@@ -13,7 +13,8 @@ import { RiMessage2Line } from 'react-icons/ri'
 import { FaReact } from 'react-icons/fa'
 import { SiNextdotjs, SiTailwindcss, SiSolidity, SiEthereum,
   SiCss3, SiBootstrap, SiTypescript, SiStyledcomponents,
-  SiAzuredevops } from 'react-icons/si'
+  SiAzuredevops, SiPython, SiFlask, SiMysql, SiPostgresql
+ } from 'react-icons/si'
 
 const HomeTemplate: React.FC = () => {
   return (
@@ -144,7 +145,7 @@ const HomeTemplate: React.FC = () => {
             lineHeight='2.5'
             zIndex={9}
           >
-            *Includes my personal, and professional projects*
+            *Includes my personal and professional projects*
           </Text>
           <Link
             fontFamily='Poppins, serif'
@@ -155,7 +156,7 @@ const HomeTemplate: React.FC = () => {
             hoverColor='white'
             isAnimated={true}
             margin='.5rem 0 0'
-            href='https://github.com/Yevhenbk'
+            href='https://github.com/Yevhenbk?tab=repositories'
           >
             See all the works
           </Link>
@@ -199,13 +200,17 @@ const HomeTemplate: React.FC = () => {
               <SiTypescript />
               <SiCss3 />
               <SiBootstrap />
+              <SiPython />
+              <SiFlask />
+              <SiMysql className='text-2xl' />
+              <SiPostgresql />
             </ProjectCard>
             <ProjectCard 
               name='Worksut'
               headerColor='#FF524A'
               description='Responsive, fully animated desktop-only landing 
-              page developed for Worksut startup'
-              href='https://github.com/Yevhenbk/worksut-landing'
+              page developed for Worksut startup.'
+              href='https://worksut.netlify.app'
               background='url(../../../static/img/bubblePink.svg)'
             >
               <FaReact />
