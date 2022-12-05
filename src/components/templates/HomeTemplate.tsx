@@ -163,7 +163,8 @@ const HomeTemplate: React.FC = () => {
             justify-items-center
             w-[100%]
             pt-[4rem]
-            gap-[3rem]
+            gap-x-[2rem]
+            gap-y-[5rem]
             min-[1736px]:w-[80vw]'
           >
             {projectCardItems.map((item: ProjectCardItemsProps) => (

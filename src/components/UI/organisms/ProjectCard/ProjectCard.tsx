@@ -109,7 +109,7 @@ const ProjectCard: React.FC<Props> = (props) => {
             {props.isTailwind ? <SiTailwindcss /> : <></>}
             {props.isStyledComponents ? <SiStyledcomponents className='text-3xl' /> : <></>}
             {props.isPython ? <SiPython /> : <></>}
-            {props.isReact ? <SiFlask /> : <></>}
+            {props.isFlask ? <SiFlask /> : <></>}
             {props.isSQL ? <SiMysql className='text-2xl' /> : <></>}
             {props.isPostgres ? <SiPostgresql /> : <></>}
             {props.isSolidity ? <SiSolidity /> : <></>}
