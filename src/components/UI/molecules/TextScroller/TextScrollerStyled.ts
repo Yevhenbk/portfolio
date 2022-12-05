@@ -13,18 +13,18 @@ export const TextScrollerStyled = styled.a`
 
   @-webkit-keyframes mymove {
     from {
-      left: -50vw;
+      left: -43rem;
     }
     to {
-      left: -220vw;
+      left: -206rem;
     }
   }
   
   @keyframes mymove {
     from {
-      left: -50vw;
+      left: -43rem;
     }
     to {
-      left: -220vw;
+      left: -206rem;
     }
   }`
