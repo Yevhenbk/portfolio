@@ -14,14 +14,15 @@ export interface Props {
   strokeColor?: string,
   isLinear?: boolean,
   zIndex?: number,
-  textAlign?: string  
+  textAlign?: string,
+  fontStyle?: string  
 }
 
 export const TextStyled = styled.div((props: Props) => [
   `${props.isStroke ? `-webkit-text-stroke: 1px ${props.strokeColor}` :
   ``};
   ${props.isLinear ? 
-  `background: linear-gradient(to right, #D17F82, #5A3BF8, black);
+  `background: linear-gradient(to right, #D17F82, #5A3BF8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;` : ``};
   color: ${props.color};
@@ -35,4 +36,5 @@ export const TextStyled = styled.div((props: Props) => [
   line-height: ${props.lineHeight};
   z-index: ${props.zIndex};
   text-align: ${props.textAlign};
+  font-style: ${props.fontStyle};
 `])

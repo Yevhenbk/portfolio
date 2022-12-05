@@ -8,6 +8,7 @@ import Iframe from '@atoms/Iframe/Iframe'
 import Link from '@molecules/Link/Link'
 import Icon from '@atoms/Icon/Icon'
 import ProjectCard from '@organisms/ProjectCard/ProjectCard'
+import ProfessionalCard from '@organisms/ProfessionalCard/ProfessionalCard'
 import Background from '@atoms/Background/Background'
 import { RiMessage2Line, RiGoogleFill } from 'react-icons/ri'
 import { FaReact } from 'react-icons/fa'
@@ -227,7 +228,6 @@ const HomeTemplate: React.FC = () => {
             items-center
             w-[100%]
             pt-[4rem]
-            pb-[8rem]
             min-[1736px]:w-[80vw]'
           >
             <ProjectCard 
@@ -269,6 +269,82 @@ const HomeTemplate: React.FC = () => {
               <SiStyledcomponents className='text-3xl' />
               <SiStrapi />
             </ProjectCard>
+          </div>
+          <div 
+            className='
+            flex
+            flex-row
+            justify-center
+            gap-[10rem]
+            w-[100%]
+            items-start
+            pt-[16rem]'
+          >
+            <Text 
+            color='black'
+            fontSize={52}  
+            fontFamily='Poppins, serif'
+            fontWeight={900}
+            lineHeight='1.25'
+            zIndex={9}
+          >
+            Experience
+          </Text>
+          <div
+            className='
+            flex
+            flex-col
+            gap-[5rem]'
+          >
+            <ProfessionalCard 
+              title='Worksut'
+              date='Jun - Sep 2022'
+              role='Frontend Team Lead'
+              description='Entering a fresh startup and taking responsibilities 
+              as Frontend Team Lead, maintaining the source code, managing and 
+              reviewing branches.'
+            />
+            <ProfessionalCard 
+              title='Worksut'
+              date='Jun - Sep 2022'
+              role='Frontend Team Lead'
+              description='Entering a fresh startup and taking responsibilities 
+              as Frontend Team Lead, maintaining the source code, managing and 
+              reviewing branches.'
+            />
+            <ProfessionalCard 
+              title='Worksut'
+              date='Jun - Sep 2022'
+              role='Frontend Team Lead'
+              description='Entering a fresh startup and taking responsibilities 
+              as Frontend Team Lead, maintaining the source code, managing and 
+              reviewing branches.'
+            />
+            <ProfessionalCard 
+              title='Worksut'
+              date='Jun - Sep 2022'
+              role='Frontend Team Lead'
+              description='Entering a fresh startup and taking responsibilities 
+              as Frontend Team Lead, maintaining the source code, managing and 
+              reviewing branches.'
+            />
+            <ProfessionalCard 
+              title='Worksut'
+              date='Jun - Sep 2022'
+              role='Frontend Team Lead'
+              description='Entering a fresh startup and taking responsibilities 
+              as Frontend Team Lead, maintaining the source code, managing and 
+              reviewing branches.'
+            />
+            <ProfessionalCard 
+              title='Worksut'
+              date='Jun - Sep 2022'
+              role='Frontend Team Lead'
+              description='Entering a fresh startup and taking responsibilities 
+              as Frontend Team Lead, maintaining the source code, managing and 
+              reviewing branches.'
+            />
+          </div>
           </div>
         </Wrapper>
       </div>
