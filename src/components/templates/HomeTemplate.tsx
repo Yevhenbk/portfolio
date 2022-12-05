@@ -15,6 +15,7 @@ import { SiNextdotjs, SiTailwindcss, SiSolidity, SiEthereum,
   SiSass, SiBootstrap, SiTypescript, SiStyledcomponents,
   SiAzuredevops, SiPython, SiFlask, SiMysql, SiPostgresql,
   SiStrapi } from 'react-icons/si'
+import TextScroller from '@molecules/TextScroller/TextScroller'
 
 const HomeTemplate: React.FC = () => {
   return (
@@ -227,6 +228,7 @@ const HomeTemplate: React.FC = () => {
             items-center
             w-[100%]
             pt-[4rem]
+            pb-[8rem]
             min-[1736px]:w-[80vw]'
           >
             <ProjectCard 
@@ -259,7 +261,7 @@ const HomeTemplate: React.FC = () => {
             <ProjectCard 
               name='Marvel Characters'
               headerColor='#A71C21'
-              description='This project is an app that is connected to an external APIs 
+              description='This project is an app that is connected to external APIs 
               and showing the result from it, which is marvel characters.'
               href='https://monumental-conkies-9acc89.netlify.app'
               background='url(../../../static/img/bubbleRed.svg)'
@@ -268,6 +270,11 @@ const HomeTemplate: React.FC = () => {
               <SiStyledcomponents className='text-3xl' />
               <SiStrapi />
             </ProjectCard>
+          </div>
+          <div className='absolute top-[140rem]'>
+            <TextScroller>
+              Worksut Tercios CGSpark Upwork dooboolab Norte Hispana
+            </TextScroller>
           </div>
         </Wrapper>
       </div>

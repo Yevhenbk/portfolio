@@ -4,7 +4,8 @@ export interface Props {
   justifyContent: string,
   direction: string,
   alignItems?: string,
-  padding?: string 
+  padding?: string,
+  position?: string
 }
 
 export const WrapperStyled = styled.div((props: Props) => [`
@@ -13,5 +14,6 @@ export const WrapperStyled = styled.div((props: Props) => [`
   justify-content: ${props.justifyContent};
   align-items: ${props.alignItems};
   padding: ${props.padding};
-  width: 100%;`,
-])
+  width: 100%;
+  position: ${props.position};
+`])
