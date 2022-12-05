@@ -2,14 +2,36 @@ import Text from '@atoms/Text/Text'
 import { CardStyled, WrapperStyled, Props as CardStyledProps } from './ProjectCardStyled'
 import { useSpring, config } from 'react-spring'
 import { GoLinkExternal } from 'react-icons/go'
+import { RiGoogleFill } from 'react-icons/ri'
+import { FaReact } from 'react-icons/fa'
+import { SiNextdotjs, SiTailwindcss, SiSolidity, SiEthereum,
+  SiSass, SiBootstrap, SiTypescript, SiStyledcomponents,
+  SiAzuredevops, SiPython, SiFlask, SiMysql, SiPostgresql,
+  SiStrapi } from 'react-icons/si'
 
 interface Props
   extends CardStyledProps {
+    myKey: number,
     href?: string,
     name: string,
     description: string,
-    children: React.ReactNode,
-    headerColor: string
+    headerColor: string,
+    isReact?: boolean,
+    isNext?: boolean,
+    isTypeScript?: boolean,
+    isTailwind?: boolean,
+    isStyledComponents?: boolean,
+    isSolidity?: boolean,
+    isGoogle?: boolean,
+    isAzure?: boolean,
+    isPython?: boolean,
+    isFlask?: boolean,
+    isSQL?: boolean,
+    isSass?: boolean,
+    isStrapi?: boolean,
+    isBootstrap?: boolean,
+    isEthereum?: boolean,
+    isPostgres?: boolean
   }
 
 const calc = (x: any, y: any) => [-(y - window.innerHeight / 2) / 40, (x - window.innerWidth / 2) / 40, 1]
@@ -21,6 +43,7 @@ const ProjectCard: React.FC<Props> = (props) => {
   
   return (
     <CardStyled
+      key={props.myKey}
       onMouseMove={({clientX: x, clientY: y}) => (set({xys: calc(x, y)}))}
       onMouseLeave={() => set({xys:[0,0,1]})}
       style={{
@@ -77,7 +100,22 @@ const ProjectCard: React.FC<Props> = (props) => {
             gap-[1rem]
             pt-[1rem]'
           >
-            {props.children}
+            {props.isReact ? <FaReact /> : <></>}
+            {props.isNext ? <SiNextdotjs /> : <></>}
+            {props.isTypeScript ? <SiTypescript /> : <></>}
+            {props.isSass ? <SiSass /> : <></>}
+            {props.isBootstrap ? <SiBootstrap /> : <></>}
+            {props.isAzure ? <SiAzuredevops /> : <></>}
+            {props.isTailwind ? <SiTailwindcss /> : <></>}
+            {props.isStyledComponents ? <SiStyledcomponents className='text-3xl' /> : <></>}
+            {props.isPython ? <SiPython /> : <></>}
+            {props.isReact ? <SiFlask /> : <></>}
+            {props.isSQL ? <SiMysql className='text-2xl' /> : <></>}
+            {props.isPostgres ? <SiPostgresql /> : <></>}
+            {props.isSolidity ? <SiSolidity /> : <></>}
+            {props.isEthereum ? <SiEthereum /> : <></>}
+            {props.isStrapi ? <SiStrapi /> : <></>}
+            {props.isGoogle ? <RiGoogleFill /> : <></>}
           </div>
         </div>
         <Text

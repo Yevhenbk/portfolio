@@ -9,12 +9,8 @@ import Link from '@molecules/Link/Link'
 import Icon from '@atoms/Icon/Icon'
 import ProjectCard from '@organisms/ProjectCard/ProjectCard'
 import Background from '@atoms/Background/Background'
-import { RiMessage2Line, RiGoogleFill } from 'react-icons/ri'
-import { FaReact } from 'react-icons/fa'
-import { SiNextdotjs, SiTailwindcss, SiSolidity, SiEthereum,
-  SiSass, SiBootstrap, SiTypescript, SiStyledcomponents,
-  SiAzuredevops, SiPython, SiFlask, SiMysql, SiPostgresql,
-  SiStrapi } from 'react-icons/si'
+import { projectCardItems, Props as ProjectCardItemsProps } from '../../../static/utils/ProjectCardItems'
+import { RiMessage2Line } from 'react-icons/ri'
 
 const HomeTemplate: React.FC = () => {
   return (
@@ -162,112 +158,39 @@ const HomeTemplate: React.FC = () => {
           </Link>
           <div
             className='
-            flex
-            flex-row
-            justify-around
-            items-center
+            grid
+            grid-cols-3
+            justify-items-center
             w-[100%]
             pt-[4rem]
+            gap-[3rem]
             min-[1736px]:w-[80vw]'
           >
-            <ProjectCard
-              name='Cloudchain'
-              headerColor='#9B60B8'
-              description='Cloudchain is a web application where you can 
-              transfer crypto assets all around the globe.'
-              href='https://cloudchain.vercel.app'
-              background='url(../../../static/img/bubblePurple.svg)'
-            >
-              <FaReact />
-              <SiNextdotjs />
-              <SiTypescript />
-              <SiTailwindcss />
-              <SiStyledcomponents className='text-3xl' />
-              <SiSolidity />
-              <SiEthereum />
-            </ProjectCard>
-            <ProjectCard
-              name='Los Tercios'
-              headerColor='#efa50e'
-              description='Los Tercios is a fullstack project developed for 
-              people getting familiar with weighlifting and are intersted 
-              in lifting in Madrid.
-              (Currently under construction)'
-              href='https://github.com/Yevhenbk/los-tercios'
-              background='url(../../../static/img/bubblePeach.svg)'
-            >
-              <FaReact />
-              <SiTypescript />
-              <SiSass />
-              <SiBootstrap />
-              <SiPython />
-              <SiFlask />
-              <SiMysql className='text-2xl' />
-              <SiPostgresql />
-            </ProjectCard>
-            <ProjectCard 
-              name='Worksut'
-              headerColor='#FF524A'
-              description='Responsive, fully animated desktop-only landing 
-              page developed for Worksut startup.'
-              href='https://worksut.netlify.app'
-              background='url(../../../static/img/bubblePink.svg)'
-            >
-              <FaReact />
-              <SiTypescript />
-              <SiStyledcomponents className='text-3xl' />
-              <SiAzuredevops />
-            </ProjectCard>
-          </div>
-          <div
-            className='
-            flex
-            flex-row
-            justify-around
-            items-center
-            w-[100%]
-            pt-[4rem]
-            min-[1736px]:w-[80vw]'
-          >
-            <ProjectCard 
-              name='Travel Advisor'
-              headerColor='black'
-              description='Travely is a web app that serves for providing top 
-              rated places you’re willing to find depending on your location.'
-              href='https://lamentable-record.surge.sh'
-              background='url(../../../static/img/bubbleBlack.svg)'
-            >
-              <FaReact />
-              <SiSass />
-              <SiBootstrap />
-              <RiGoogleFill />
-            </ProjectCard>
-            <ProjectCard 
-              name='Technical Challenge'
-              headerColor='#EE679F'
-              description='Technical Challenge that consist of Calculator, Quotes API,
-              and Metamask connect.'
-              href='https://63347316ca969e094b51dbed--peppy-beijinho-1dd33a.netlify.app'
-              background='url(../../../static/img/bubblePink.svg)'
-            >
-              <FaReact />
-              <SiNextdotjs />
-              <SiTypescript />
-              <SiStyledcomponents className='text-3xl' />
-              <SiEthereum />
-            </ProjectCard>
-            <ProjectCard 
-              name='Marvel Characters'
-              headerColor='#A71C21'
-              description='This project is an app that is connected to external APIs 
-              and showing the result from it, which is marvel characters.'
-              href='https://monumental-conkies-9acc89.netlify.app'
-              background='url(../../../static/img/bubbleRed.svg)'
-            >
-              <FaReact />
-              <SiStyledcomponents className='text-3xl' />
-              <SiStrapi />
-            </ProjectCard>
+            {projectCardItems.map((item: ProjectCardItemsProps) => (
+              <ProjectCard 
+                key={item.id}
+                myKey={item.id}
+                name={item.name}
+                description={item.description}
+                headerColor={item.headerColor}
+                isReact={item.isReact}
+                isNext={item.isNext}
+                isTypeScript={item.isTypeScript}
+                isSass={item.isSass}
+                isBootstrap={item.isBootstrap}
+                isTailwind={item.isTailwind}
+                isStyledComponents={item.isStyledComponents}
+                isAzure={item.isAzure}
+                isGoogle={item.isGoogle}
+                isPython={item.isPython}
+                isFlask={item.isFlask}
+                isSQL={item.isSQL}
+                isPostgres={item.isPostgres}
+                isSolidity={item.isSolidity}
+                isEthereum={item.isEthereum}
+                isStrapi={item.isStrapi}
+              />
+            ))}
           </div>
         </Wrapper>
       </div>
