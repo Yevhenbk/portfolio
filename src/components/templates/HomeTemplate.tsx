@@ -9,12 +9,12 @@ import Link from '@molecules/Link/Link'
 import Icon from '@atoms/Icon/Icon'
 import ProjectCard from '@organisms/ProjectCard/ProjectCard'
 import Background from '@atoms/Background/Background'
-import { RiMessage2Line } from 'react-icons/ri'
+import { RiMessage2Line, RiGoogleFill } from 'react-icons/ri'
 import { FaReact } from 'react-icons/fa'
 import { SiNextdotjs, SiTailwindcss, SiSolidity, SiEthereum,
-  SiCss3, SiBootstrap, SiTypescript, SiStyledcomponents,
-  SiAzuredevops, SiPython, SiFlask, SiMysql, SiPostgresql
- } from 'react-icons/si'
+  SiSass, SiBootstrap, SiTypescript, SiStyledcomponents,
+  SiAzuredevops, SiPython, SiFlask, SiMysql, SiPostgresql,
+  SiStrapi } from 'react-icons/si'
 
 const HomeTemplate: React.FC = () => {
   return (
@@ -123,7 +123,7 @@ const HomeTemplate: React.FC = () => {
         >
           <div className='w-0 h-0'>
             <Background 
-              top='60rem'
+              top='85rem'
               background='url(../../../static/img/waves.svg)'
             />
           </div>
@@ -135,7 +135,7 @@ const HomeTemplate: React.FC = () => {
             lineHeight='1.25'
             zIndex={9}
           >
-            My latest works
+            My recent works
           </Text>
           <Text 
             color='black'
@@ -198,7 +198,7 @@ const HomeTemplate: React.FC = () => {
             >
               <FaReact />
               <SiTypescript />
-              <SiCss3 />
+              <SiSass />
               <SiBootstrap />
               <SiPython />
               <SiFlask />
@@ -217,6 +217,56 @@ const HomeTemplate: React.FC = () => {
               <SiTypescript />
               <SiStyledcomponents className='text-3xl' />
               <SiAzuredevops />
+            </ProjectCard>
+          </div>
+          <div
+            className='
+            flex
+            flex-row
+            justify-around
+            items-center
+            w-[100%]
+            pt-[4rem]
+            min-[1736px]:w-[80vw]'
+          >
+            <ProjectCard 
+              name='Travel Advisor'
+              headerColor='black'
+              description='Travely is a web app that serves for providing top 
+              rated places you’re willing to find depending on your location.'
+              href='https://lamentable-record.surge.sh'
+              background='url(../../../static/img/bubbleBlack.svg)'
+            >
+              <FaReact />
+              <SiSass />
+              <SiBootstrap />
+              <RiGoogleFill />
+            </ProjectCard>
+            <ProjectCard 
+              name='Technical Challenge'
+              headerColor='#EE679F'
+              description='Technical Challenge that consist of Calculator, Quotes API,
+              and Metamask connect.'
+              href='https://63347316ca969e094b51dbed--peppy-beijinho-1dd33a.netlify.app'
+              background='url(../../../static/img/bubblePink.svg)'
+            >
+              <FaReact />
+              <SiNextdotjs />
+              <SiTypescript />
+              <SiStyledcomponents className='text-3xl' />
+              <SiEthereum />
+            </ProjectCard>
+            <ProjectCard 
+              name='Marvel Characters'
+              headerColor='#A71C21'
+              description='This project is an app that is connected to an external APIs 
+              and showing the result from it, which is marvel characters.'
+              href='https://monumental-conkies-9acc89.netlify.app'
+              background='url(../../../static/img/bubbleRed.svg)'
+            >
+              <FaReact />
+              <SiStyledcomponents className='text-3xl' />
+              <SiStrapi />
             </ProjectCard>
           </div>
         </Wrapper>
