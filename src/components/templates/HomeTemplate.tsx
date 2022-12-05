@@ -15,7 +15,6 @@ import { SiNextdotjs, SiTailwindcss, SiSolidity, SiEthereum,
   SiSass, SiBootstrap, SiTypescript, SiStyledcomponents,
   SiAzuredevops, SiPython, SiFlask, SiMysql, SiPostgresql,
   SiStrapi } from 'react-icons/si'
-import TextScroller from '@molecules/TextScroller/TextScroller'
 
 const HomeTemplate: React.FC = () => {
   return (
@@ -270,11 +269,6 @@ const HomeTemplate: React.FC = () => {
               <SiStyledcomponents className='text-3xl' />
               <SiStrapi />
             </ProjectCard>
-          </div>
-          <div className='absolute top-[140rem]'>
-            <TextScroller>
-              Worksut Tercios CGSpark Upwork dooboolab Norte Hispana
-            </TextScroller>
           </div>
         </Wrapper>
       </div>
