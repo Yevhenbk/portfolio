@@ -7,7 +7,7 @@ import { FaReact } from 'react-icons/fa'
 import { SiNextdotjs, SiTailwindcss, SiSolidity, SiEthereum,
   SiSass, SiBootstrap, SiTypescript, SiStyledcomponents,
   SiAzuredevops, SiPython, SiFlask, SiMysql, SiPostgresql,
-  SiStrapi } from 'react-icons/si'
+  SiStrapi, SiMaterialui} from 'react-icons/si'
 
 interface Props
   extends CardStyledProps {
@@ -31,7 +31,8 @@ interface Props
     isStrapi?: boolean,
     isBootstrap?: boolean,
     isEthereum?: boolean,
-    isPostgres?: boolean
+    isPostgres?: boolean,
+    isMaterialui?: boolean
   }
 
 const calc = (x: any, y: any) => [-(y - window.innerHeight / 2) / 40, (x - window.innerWidth / 2) / 40, 1]
@@ -107,6 +108,7 @@ const ProjectCard: React.FC<Props> = (props) => {
             {props.isBootstrap ? <SiBootstrap /> : <></>}
             {props.isAzure ? <SiAzuredevops /> : <></>}
             {props.isTailwind ? <SiTailwindcss /> : <></>}
+            {props.isMaterialui ? <SiMaterialui /> : <></>}
             {props.isStyledComponents ? <SiStyledcomponents className='text-3xl' /> : <></>}
             {props.isPython ? <SiPython /> : <></>}
             {props.isFlask ? <SiFlask /> : <></>}

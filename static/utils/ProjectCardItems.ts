@@ -20,7 +20,8 @@ export interface Props {
   isStrapi?: boolean,
   isBootstrap?: boolean,
   isEthereum?: boolean,
-  isPostgres?: boolean
+  isPostgres?: boolean,
+  isMaterialui?: boolean
 }
 
 export const projectCardItems: Props[] = [
@@ -39,7 +40,7 @@ export const projectCardItems: Props[] = [
   { id: 1, name: "Travel Advisor", headerColor: "black",
   description: "Travely is a web app that serves for providing top rated places you’re willing to find depending on your location.",
   href: "https://lamentable-record.surge.sh", background: "url(../../../static/img/bubbleBlack.svg)", isReact: true, 
-  isSass: true, isBootstrap: true, isGoogle: true },
+  isSass: true, isBootstrap: true, isGoogle: true, isMaterialui: true },
   { id: 1, name: "Technocal Challenge", headerColor: "#EE679F",
   description: "Technical Challenge that consist of Calculator, Quotes API, and Metamask connect.",
   href: "https://63347316ca969e094b51dbed--peppy-beijinho-1dd33a.netlify.app", background: "url(../../../static/img/bubblePink.svg)", 

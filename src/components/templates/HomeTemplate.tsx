@@ -174,6 +174,7 @@ const HomeTemplate: React.FC = () => {
                 name={item.name}
                 description={item.description}
                 headerColor={item.headerColor}
+                href={item.href}
                 isReact={item.isReact}
                 isNext={item.isNext}
                 isTypeScript={item.isTypeScript}
@@ -181,6 +182,7 @@ const HomeTemplate: React.FC = () => {
                 isBootstrap={item.isBootstrap}
                 isTailwind={item.isTailwind}
                 isStyledComponents={item.isStyledComponents}
+                isMaterialui={item.isMaterialui}
                 isAzure={item.isAzure}
                 isGoogle={item.isGoogle}
                 isPython={item.isPython}
