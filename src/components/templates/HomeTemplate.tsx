@@ -64,7 +64,8 @@ const HomeTemplate: React.FC = () => {
             width='30rem'
           >
             <p>
-              I’m a software engineer specializing in building 
+              I’m a software engineer with over 4 years of
+              experience specializing in building 
               (and occasionally designing)
               exceptional digital experiences.
             </p>
