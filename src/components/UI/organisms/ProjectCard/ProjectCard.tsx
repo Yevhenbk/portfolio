@@ -1,5 +1,6 @@
 import Text from '@atoms/Text/Text'
 import { CardStyled, WrapperStyled, Props as CardStyledProps } from './ProjectCardStyled'
+import { IconWrapperProps, IconWrapperStyled } from './ProjectCard.Helper'
 import { useSpring, config } from 'react-spring'
 import { GoLinkExternal } from 'react-icons/go'
 import { RiGoogleFill } from 'react-icons/ri'
@@ -34,6 +35,14 @@ interface Props
     isPostgres?: boolean,
     isMaterialui?: boolean
   }
+
+const IconWrapper: React.FC<IconWrapperProps> = (props) => {
+  return (
+    <IconWrapperStyled>
+      {props.children}
+    </IconWrapperStyled>
+  )
+}  
 
 const calc = (x: any, y: any) => [-(y - window.innerHeight / 2) / 40, (x - window.innerWidth / 2) / 40, 1]
 const trans = (x: any, y: any, s: any) => `perspective(800px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
@@ -96,28 +105,199 @@ const ProjectCard: React.FC<Props> = (props) => {
             className='
             flex
             flex-row
+            flex-wrap
             justify-start
             items-center
             gap-[1rem]
             pt-[1rem]'
           >
-            {props.isReact ? <FaReact /> : <></>}
-            {props.isNext ? <SiNextdotjs /> : <></>}
-            {props.isTypeScript ? <SiTypescript /> : <></>}
-            {props.isSass ? <SiSass /> : <></>}
-            {props.isBootstrap ? <SiBootstrap /> : <></>}
-            {props.isAzure ? <SiAzuredevops /> : <></>}
-            {props.isTailwind ? <SiTailwindcss /> : <></>}
-            {props.isMaterialui ? <SiMaterialui /> : <></>}
-            {props.isStyledComponents ? <SiStyledcomponents className='text-3xl' /> : <></>}
-            {props.isPython ? <SiPython /> : <></>}
-            {props.isFlask ? <SiFlask /> : <></>}
-            {props.isSQL ? <SiMysql className='text-2xl' /> : <></>}
-            {props.isPostgres ? <SiPostgresql /> : <></>}
-            {props.isSolidity ? <SiSolidity /> : <></>}
-            {props.isEthereum ? <SiEthereum /> : <></>}
-            {props.isStrapi ? <SiStrapi /> : <></>}
-            {props.isGoogle ? <RiGoogleFill /> : <></>}
+            {props.isReact ? 
+            <IconWrapper>
+              <FaReact />
+              <Text
+                fontFamily='Share Tech Mono, sans'
+                fontSize={10}
+              >
+                React.js
+              </Text>
+            </IconWrapper> 
+            : <></>}
+            {props.isNext ?
+            <IconWrapper>
+              <SiNextdotjs />
+              <Text
+                fontFamily='Share Tech Mono, sans'
+                fontSize={10}
+              >
+                Next.js
+              </Text>
+            </IconWrapper>
+            : <></>}
+            {props.isTypeScript ?
+            <IconWrapper>
+              <SiTypescript className='rounded-xl' />
+              <Text
+                fontFamily='Share Tech Mono, sans'
+                fontSize={10}
+              >
+                TypeScript
+              </Text>
+            </IconWrapper>
+            : <></>}
+            {props.isSass ?
+            <IconWrapper>
+              <SiSass />
+              <Text
+                fontFamily='Share Tech Mono, sans'
+                fontSize={10}
+              >
+                SASS
+              </Text>
+            </IconWrapper>
+            : <></>}
+            {props.isBootstrap ?
+            <IconWrapper>
+              <SiBootstrap />
+              <Text
+                fontFamily='Share Tech Mono, sans'
+                fontSize={10}
+              >
+                Bootstrap
+              </Text>
+            </IconWrapper>
+            : <></>}
+            {props.isAzure ?
+            <IconWrapper>
+              <SiAzuredevops />
+              <Text
+                fontFamily='Share Tech Mono, sans'
+                fontSize={10}
+              >
+                Azure
+              </Text>
+            </IconWrapper>
+            : <></>}
+            {props.isTailwind ?
+            <IconWrapper>
+              <SiTailwindcss />
+              <Text
+                fontFamily='Share Tech Mono, sans'
+                fontSize={10}
+              >
+                TailwindCSS
+              </Text>
+            </IconWrapper>
+            : <></>}
+            {props.isMaterialui ?
+            <IconWrapper>
+              <SiMaterialui />
+              <Text
+                fontFamily='Share Tech Mono, sans'
+                fontSize={10}
+              >
+                MUI
+              </Text>
+            </IconWrapper>
+            : <></>}
+            {props.isStyledComponents ?
+            <IconWrapper>
+              <SiStyledcomponents />
+              <Text
+                fontFamily='Share Tech Mono, sans'
+                fontSize={10}
+              >
+                styled-components
+              </Text>
+            </IconWrapper>
+            : <></>}
+            {props.isPython ?
+            <IconWrapper>
+              <SiPython />
+              <Text
+                fontFamily='Share Tech Mono, sans'
+                fontSize={10}
+              >
+                Python
+              </Text>
+            </IconWrapper>
+            : <></>}
+            {props.isFlask ?
+            <IconWrapper>
+              <SiFlask />
+              <Text
+                fontFamily='Share Tech Mono, sans'
+                fontSize={10}
+              >
+                Flask
+              </Text>
+            </IconWrapper>
+            : <></>}
+            {props.isSQL ? 
+            <IconWrapper>
+              <SiMysql />
+              <Text
+                fontFamily='Share Tech Mono, sans'
+                fontSize={10}
+              >
+                MySQL
+              </Text>
+            </IconWrapper>
+            : <></>}
+            {props.isPostgres ?
+            <IconWrapper>
+              <SiPostgresql />
+              <Text
+                fontFamily='Share Tech Mono, sans'
+                fontSize={10}
+              >
+                Postgresql
+              </Text>
+            </IconWrapper>
+            : <></>}
+            {props.isSolidity ? 
+            <IconWrapper>
+              <SiSolidity />
+              <Text
+                fontFamily='Share Tech Mono, sans'
+                fontSize={10}
+              >
+                Solidity
+              </Text>
+            </IconWrapper>
+            : <></>}
+            {props.isEthereum ?
+            <IconWrapper>
+              <SiEthereum />
+              <Text
+                fontFamily='Share Tech Mono, sans'
+                fontSize={10}
+              >
+                Ethers.js
+              </Text>
+            </IconWrapper>
+            : <></>}
+            {props.isStrapi ?
+            <IconWrapper>
+              <SiStrapi />
+              <Text
+                fontFamily='Share Tech Mono, sans'
+                fontSize={10}
+              >
+                Strapi
+              </Text>
+            </IconWrapper>
+            : <></>}
+            {props.isGoogle ? 
+            <IconWrapper>
+              <RiGoogleFill />
+              <Text
+                fontFamily='Share Tech Mono, sans'
+                fontSize={10}
+              >
+                Google API
+              </Text>
+            </IconWrapper>
+            : <></>}
           </div>
         </div>
         <Text
