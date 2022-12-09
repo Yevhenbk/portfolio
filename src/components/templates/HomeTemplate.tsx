@@ -9,7 +9,10 @@ import Link from '@molecules/Link/Link'
 import Icon from '@atoms/Icon/Icon'
 import ProjectCard from '@organisms/ProjectCard/ProjectCard'
 import Background from '@atoms/Background/Background'
+import ListItems from '@atoms/ListItems/ListItems'
+import { ListItemStyled } from '@atoms/ListItems/ListItemsStyled'
 import { projectCardItems, Props as ProjectCardItemsProps } from '../../../static/utils/ProjectCardItems'
+import { skillsItems, Props as SkillsItemsProps } from '../../../static/utils/SkillsItems'
 import { RiMessage2Line } from 'react-icons/ri'
 
 const HomeTemplate: React.FC = () => {
@@ -199,23 +202,80 @@ const HomeTemplate: React.FC = () => {
           </div>
           <div
             className='
-            relative
-            right-32
             flex
             flex-col
             items-end
-            w-[100%]
-            pt-[12rem]'
+            w-[100vw]
+            pt-[12rem]
+            min-[1736px]:w-[80vw]'
           >
-            <Text
+            <div
+              className='
+              relative
+              right-32'
+            >
+             <Text
               color='black'
               fontSize={52}
               fontFamily='Poppins, serif'
               fontWeight={900}
               lineHeight='1.25'
+              width='36rem'
+              textAlign='end'
+              >
+                <h1>Skills & Technologies</h1>
+              </Text> 
+            </div>
+            <div
+              className='
+              flex
+              flex-row
+              justify-around
+              w-[100%]
+              pt-[4rem]'
             >
-              <h1>Technologies I use</h1>
-            </Text>
+              {skillsItems.map((item: SkillsItemsProps) => (
+                <ListItems 
+                 title={item.title}>
+                  <ListItemStyled>
+                    {item.skillOne}
+                  </ListItemStyled>
+                  <ListItemStyled>
+                    {item.skillTwo}
+                  </ListItemStyled>
+                  <ListItemStyled>
+                    {item.skillThree}
+                  </ListItemStyled>
+                  <ListItemStyled>
+                    {item.skillFour}
+                  </ListItemStyled>
+                  <ListItemStyled>
+                    {item.skillFive}
+                  </ListItemStyled>
+                  <ListItemStyled>
+                    {item.skillSix}
+                  </ListItemStyled>
+                  <ListItemStyled>
+                    {item.skillSeven}
+                  </ListItemStyled>
+                  <ListItemStyled>
+                    {item.skillEight}
+                  </ListItemStyled>
+                  <ListItemStyled>
+                    {item.skillNine}
+                  </ListItemStyled>
+                  <ListItemStyled>
+                    {item.skillTen}
+                  </ListItemStyled>
+                  <ListItemStyled>
+                    {item.skillEleven}
+                  </ListItemStyled>
+                  <ListItemStyled>
+                    {item.skillTwelve}
+                  </ListItemStyled>
+                 </ListItems>
+              ))}
+            </div>
           </div>
         </Wrapper>
       </div>
