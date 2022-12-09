@@ -41,7 +41,7 @@ export const projectCardItems: Props[] = [
   description: "Travely is a web app that serves for providing top rated places you’re willing to find depending on your location.",
   href: "https://lamentable-record.surge.sh", background: "url(../../../static/img/bubbleBlack.svg)", isReact: true, 
   isSass: true, isBootstrap: true, isGoogle: true, isMaterialui: true },
-  { id: 5, name: "Technocal Challenge", headerColor: "#EE679F",
+  { id: 5, name: "Technical Challenge", headerColor: "#EE679F",
   description: "Technical Challenge that consist of Calculator, Quotes API, and Metamask connect.",
   href: "https://63347316ca969e094b51dbed--peppy-beijinho-1dd33a.netlify.app", background: "url(../../../static/img/bubblePink.svg)", 
   isReact: true, isNext: true, isTypeScript: true, isStyledComponents: true, isEthereum: true },

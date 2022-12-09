@@ -173,6 +173,7 @@ const HomeTemplate: React.FC = () => {
                 key={item.id}
                 myKey={item.id}
                 name={item.name}
+                background={item.background}
                 description={item.description}
                 headerColor={item.headerColor}
                 href={item.href}
@@ -195,6 +196,26 @@ const HomeTemplate: React.FC = () => {
                 isStrapi={item.isStrapi}
               />
             ))}
+          </div>
+          <div
+            className='
+            relative
+            right-32
+            flex
+            flex-col
+            items-end
+            w-[100%]
+            pt-[12rem]'
+          >
+            <Text
+              color='black'
+              fontSize={52}
+              fontFamily='Poppins, serif'
+              fontWeight={900}
+              lineHeight='1.25'
+            >
+              <h1>Technologies I use</h1>
+            </Text>
           </div>
         </Wrapper>
       </div>
