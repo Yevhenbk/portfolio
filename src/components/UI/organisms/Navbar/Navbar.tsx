@@ -76,7 +76,7 @@ const Navbar: React.FC = () => {
             padding='.35rem'
             borderRadius='2px'
             hoverBackground={global.scrollY >= 10 ?
-            '#fcfcfc90' : '#cacacaa5'}
+            '#fff' : '#cacacaa9'}
           >
             <AiFillLinkedin />
           </Link>
