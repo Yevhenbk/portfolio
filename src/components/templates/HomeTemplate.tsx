@@ -158,7 +158,7 @@ const HomeTemplate: React.FC = () => {
             margin='.5rem 0 0'
             href='https://github.com/Yevhenbk?tab=repositories'
           >
-            See all the works
+            See all the work
           </Link>
           <div
             className='
@@ -276,6 +276,59 @@ const HomeTemplate: React.FC = () => {
                  </ListItems>
               ))}
             </div>
+          </div>
+          <div
+            className='
+            pt-[12rem]
+            text-center
+            flex
+            flex-col
+            gap-5'
+          >
+            <Text 
+              color='black'
+              fontSize={52}  
+              fontFamily='Poppins, serif'
+              fontWeight={900}
+              lineHeight='1.25'
+              zIndex={9}
+            >
+              About Me
+            </Text>
+            <Text
+              color='black'
+              fontSize={24}
+              fontWeight={500}
+              fontFamily='Poppins, serif'
+              width='60rem'
+              textAlign='left'
+            >
+              <p>
+                Hello! My name is Yevhen and I enjoy creating things 
+                that live on the internet. My interest in web development 
+                started back in 2018 when I decided to take Python course
+                at a <a href='https://www.uc3m.es/Inicio' className='text-blue-600
+                hover:text-blue-800' target='_blank'>university</a>.
+              </p>
+              <br/>
+              <p>
+                After 3 years of studying Business Administration, I have decided 
+                to reconvert into a developer to become more independent by
+                following a 9 weeks coding <a href='https://4geeksacademy.com/es/inicio' 
+                className='text-blue-600 hover:text-blue-800' target='_blank'>bootcamp</a>. 
+                I am a highly driven and self starter and enjoy talking about new projects and
+                responsibilities. Finding ways to grow and push myself is always a
+                priority for both in professional settings or in my personal endeavors.
+              </p>
+              <br/>
+              <p>
+                Recently I worked on a <a href='https://twitter.com/worksut_' className='text-blue-600
+                hover:text-blue-800' target='_blank'>startup</a> with designers and management team to develop a
+                <a href='https://worksut.netlify.app/' className='text-blue-600 hover:text-blue-800' 
+                target='_blank'> landing page</a> for the company. Currently I am looking for new opportunities, 
+                so don't hesistate to reach out :)
+              </p>
+            </Text>
           </div>
         </Wrapper>
       </div>
