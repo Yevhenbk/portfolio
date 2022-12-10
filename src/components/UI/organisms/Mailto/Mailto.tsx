@@ -42,6 +42,7 @@ const Mailto: React.FC<Props> = (props) => {
         padding='.25rem 2rem'
         radius={3}
         isAnimated={true}
+        onClick={() => global.location.href = 'mailto:balagutrak.jenia@gmail.com'}
       >
         {props.buttonTitle}
       </Button>  
