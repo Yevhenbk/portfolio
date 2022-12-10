@@ -12,8 +12,8 @@ export const CardStyled = tw(animated.div)`
   justify-center
   h-[30rem]
   w-[25rem]
-  bg-white/50
-  backdrop-blur-md
+  bg-white/30
+  backdrop-blur-sm
   rounded-xl
   overflow-hidden
   border-solid

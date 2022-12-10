@@ -101,8 +101,8 @@ const HomeTemplate: React.FC = () => {
               right='-1rem'
               fontSize='1.125rem'
               color='black'
-              className='
-              group-hover:rotate-[-45deg]'
+              // className='
+              // group-hover:rotate-[-45deg]'
               isAnimated={true}
             >
               <RiMessage2Line />
@@ -176,7 +176,7 @@ const HomeTemplate: React.FC = () => {
                 key={item.id}
                 myKey={item.id}
                 name={item.name}
-                background={item.background}
+                // background={item.background}
                 description={item.description}
                 headerColor={item.headerColor}
                 href={item.href}
@@ -204,28 +204,22 @@ const HomeTemplate: React.FC = () => {
             className='
             flex
             flex-col
-            items-end
+            items-center
             w-[100vw]
             pt-[12rem]
             min-[1736px]:w-[80vw]'
           >
-            <div
-              className='
-              relative
-              right-32'
+            <Text
+            color='black'
+            fontSize={52}
+            fontFamily='Poppins, serif'
+            fontWeight={900}
+            lineHeight='1.25'
+            width='36rem'
+            textAlign='start'
             >
-             <Text
-              color='black'
-              fontSize={52}
-              fontFamily='Poppins, serif'
-              fontWeight={900}
-              lineHeight='1.25'
-              width='36rem'
-              textAlign='end'
-              >
-                <h1>Skills & Technologies</h1>
-              </Text> 
-            </div>
+              <h1>Skills & Technologies</h1>
+            </Text> 
             <div
               className='
               flex

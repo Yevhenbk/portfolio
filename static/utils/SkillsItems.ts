@@ -27,7 +27,5 @@ export const skillsItems: Props[] = [
   { id: 3, title: "Tools", skillOne: "Git & GitHub", skillTwo: "Chrome DevTools",
   skillThree: "Spline", skillFour: "Postman", skillFive: "MongoDB",
   skillSix: "Postgresql", skillSeven: "JWT Authentication", skillEight: "Jest & React Testing Library",
-  skillNine: "Figma", skillTen: "Adobe Photoshop" },
-  { id: 4, title: "Idiom", skillOne: "English", skillTwo: "Spanish", skillThree: "Ukrainian",
-  skillFour: "Russian" }  
+  skillNine: "Figma", skillTen: "Adobe Photoshop" } 
 ]
