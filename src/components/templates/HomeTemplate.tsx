@@ -14,6 +14,7 @@ import { ListItemStyled } from '@atoms/ListItems/ListItemsStyled'
 import { projectCardItems, Props as ProjectCardItemsProps } from '../../../static/utils/ProjectCardItems'
 import { skillsItems, Props as SkillsItemsProps } from '../../../static/utils/SkillsItems'
 import { RiMessage2Line } from 'react-icons/ri'
+import Mailto from '@organisms/Mailto/Mailto'
 
 const HomeTemplate: React.FC = () => {
   return (
@@ -158,7 +159,7 @@ const HomeTemplate: React.FC = () => {
             margin='.5rem 0 0'
             href='https://github.com/Yevhenbk?tab=repositories'
           >
-            See all the work
+            View the archive
           </Link>
           <div
             className='
@@ -215,11 +216,22 @@ const HomeTemplate: React.FC = () => {
             fontFamily='Poppins, serif'
             fontWeight={900}
             lineHeight='1.25'
-            width='36rem'
             textAlign='start'
             >
-              <h1>Skills & Technologies</h1>
+              <h1>Skills</h1>
             </Text> 
+            <Text 
+              color='black'
+              fontSize={21}
+              fontWeight={600}
+              fontFamily='Poppins, serif'
+              lineHeight='2.5'
+              zIndex={9}
+              textAlign='center'
+            >
+              *List of my favourite technologies 
+              I work with the most*
+            </Text>
             <div
               className='
               flex
@@ -274,10 +286,12 @@ const HomeTemplate: React.FC = () => {
           <div
             className='
             pt-[12rem]
+            pb-[12rem]
             text-center
             flex
             flex-col
-            gap-[4rem]'
+            gap-[4rem]
+            items-center'
           >
             <Text 
               color='black'
@@ -290,12 +304,12 @@ const HomeTemplate: React.FC = () => {
               About Me
             </Text>
             <Text
-              color='black'
+              color='#616161'
               fontSize={24}
               fontWeight={500}
               fontFamily='Poppins, serif'
               width='60rem'
-              textAlign='left'
+              textAlign='center'
             >
               <p>
                 Hello! My name is Yevhen and I enjoy creating things 
@@ -325,6 +339,59 @@ const HomeTemplate: React.FC = () => {
             </Text>
           </div>
         </Wrapper>
+        <div
+          className='
+          flex
+          flex-col
+          items-center
+          bg-[#e5e5e5]
+          border-t-[1px]
+          border-[#d0d0d0]'
+        >
+          <div
+            className='
+            relative
+            -top-[2.5rem]
+            flex
+            flex-col
+            items-center'
+          >
+            <Mailto 
+              title='What is next?'
+              buttonTitle='Contact me'
+            />
+            <div
+              className='
+              pt-[6rem]
+              flex
+              flex-col
+              gap-[2rem]
+              items-center'
+            >
+              <Text 
+                color='black'
+                fontSize={52}  
+                fontFamily='Poppins, serif'
+                fontWeight={900}
+                lineHeight='1.25'
+                zIndex={9}
+              >
+                Get in Touch
+              </Text>
+              <Text
+                color='#616161'
+                fontSize={24}
+                fontWeight={500}
+                fontFamily='Poppins, serif'
+                width='60rem'
+                textAlign='center'
+              >
+                My inbox is always open. Whether you have a question or 
+                just want to say hi, I’ll try my best to get back to you!
+              </Text>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
   )

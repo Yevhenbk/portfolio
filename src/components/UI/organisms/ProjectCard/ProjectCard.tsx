@@ -82,9 +82,9 @@ const ProjectCard: React.FC<Props> = (props) => {
           </Text>
         </div>
         <Text
-          color='black'
+          color='#616161'
           fontSize={18}
-          fontWeight={400}
+          fontWeight={500}
           fontFamily='Poppins, serif'
           lineHeight='1.5'
           {...props}
