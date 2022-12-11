@@ -17,5 +17,5 @@ export const ListItemStyled = tw.li`
   text-lg
   text-[#616161]
   font-medium
-  w-[246px]
+  w-[268px]
 `

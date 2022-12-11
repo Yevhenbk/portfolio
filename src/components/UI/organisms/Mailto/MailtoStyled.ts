@@ -9,7 +9,7 @@ export const MailtoStyled = tw(animated.div)`
   items-center
   h-[5rem]
   w-[30rem]
-  bg-white/40
+  bg-white/30
   backdrop-blur-sm
   rounded-md
   border-solid

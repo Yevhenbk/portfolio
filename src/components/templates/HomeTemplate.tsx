@@ -9,12 +9,17 @@ import Link from '@molecules/Link/Link'
 import Icon from '@atoms/Icon/Icon'
 import ProjectCard from '@organisms/ProjectCard/ProjectCard'
 import Background from '@atoms/Background/Background'
+import Mailto from '@organisms/Mailto/Mailto'
+import Image from 'next/image'
 import ListItems from '@atoms/ListItems/ListItems'
 import { ListItemStyled } from '@atoms/ListItems/ListItemsStyled'
 import { projectCardItems, Props as ProjectCardItemsProps } from '../../../static/utils/ProjectCardItems'
 import { skillsItems, Props as SkillsItemsProps } from '../../../static/utils/SkillsItems'
 import { RiMessage2Line } from 'react-icons/ri'
-import Mailto from '@organisms/Mailto/Mailto'
+import worksut from '../../../static/img/worksut.jpg'
+import losTercios from '../../../static/img/losTercios.png'
+import dooboolab from '../../../static/img/dooboolab.png'
+import upwork from '../../../static/img/upwork.png'
 
 const HomeTemplate: React.FC = () => {
   return (
@@ -123,10 +128,13 @@ const HomeTemplate: React.FC = () => {
           padding='0 0 4rem'
         >
           <div className='w-0 h-0'>
-            <Background 
+            {/* <Background 
+              position='absolute'
               top='85rem'
+              width='100vw'
+              height='100%'
               background='url(../../../static/img/waves.svg)'
-            />
+            /> */}
           </div>
           <Text 
             color='black'
@@ -286,7 +294,7 @@ const HomeTemplate: React.FC = () => {
           <div
             className='
             pt-[12rem]
-            pb-[12rem]
+            pb-[3rem]
             text-center
             flex
             flex-col
@@ -337,6 +345,74 @@ const HomeTemplate: React.FC = () => {
                 so don't hesistate to reach out :)
               </p>
             </Text>
+            <div
+              className='
+              flex
+              flex-row
+              justify-around
+              pt-[4rem]
+              items-center
+              w-[100vw]
+              min-[1736px]:w-[80vw]'
+            >
+              <div
+                className='
+                flex
+                flex-row
+                items-center
+                gap-[1rem]'
+              >
+                <Image 
+                  src={worksut}
+                  alt='Worksut'
+                  className='
+                  rounded-full
+                  w-[2.5rem]
+                  h-[2.5rem]'
+                />
+                <Text
+                  color='#FF524A'
+                  fontSize={24}
+                  fontWeight={600}
+                  fontFamily='serif'
+                >
+                  Worksut
+                </Text>
+              </div>
+              <Image 
+                src={losTercios}
+                alt='Worksut'
+                className='
+                w-[10rem]
+                object-cover'
+              />
+              <Image 
+                src={upwork}
+                alt='Worksut'
+                className='
+                w-[8rem]
+                object-cover'
+              />
+              <Image 
+                src={dooboolab}
+                alt='Worksut'
+                className='
+                w-[6rem]
+                object-cover'
+              />
+              <Background 
+                position='relative'
+                width='10rem'
+                height='1.7rem'
+                background='url(../../../static/img/cgSpark.svg)'
+              />
+              <Background 
+                position='relative'
+                width='12rem'
+                height='3rem'
+                background='url(../../../static/img/norteHispana.svg)'
+              />
+            </div>
           </div>
         </Wrapper>
         <div
@@ -387,7 +463,8 @@ const HomeTemplate: React.FC = () => {
                 textAlign='center'
               >
                 My inbox is always open. Whether you have a question or 
-                just want to say hi, I’ll try my best to get back to you!
+                just want to say hi, I will always get back to you! Reach out 
+                and let's build amaizing experiences together!
               </Text>
             </div>
           </div>
