@@ -82,6 +82,7 @@ const Navbar: React.FC = () => {
             <AiFillGithub />
           </Link>
           <Link
+            href='https://www.linkedin.com/in/yevhen-balahutrak'
             fontSize={24}
             color='black'
             padding='.35rem'
