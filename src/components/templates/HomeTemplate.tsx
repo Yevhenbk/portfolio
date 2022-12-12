@@ -93,12 +93,12 @@ const HomeTemplate: React.FC = () => {
             flexDirection='row'
             justify='space-between'
             items='center'
-            width='13rem'
+            width='12.5rem'
             hoverBackground='linear-gradient(to left, #D17F82, #9B60B8)'
           >
             Contact me
             <Icon 
-              background='white'
+              // background='white'
               width={35}
               height={35}
               padding='0.5rem'
@@ -106,7 +106,7 @@ const HomeTemplate: React.FC = () => {
               position='relative'
               right='-1rem'
               fontSize='1.125rem'
-              color='black'
+              color='white'
               // className='
               // group-hover:rotate-[-45deg]'
               isAnimated={true}
@@ -455,9 +455,9 @@ const HomeTemplate: React.FC = () => {
                 Get in Touch
               </Text>
               <Text
-                color='#616161'
-                fontSize={24}
-                fontWeight={500}
+                color='black'
+                fontSize={21}
+                fontWeight={600}
                 fontFamily='Poppins, serif'
                 width='60rem'
                 textAlign='center'
