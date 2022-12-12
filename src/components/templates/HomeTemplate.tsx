@@ -1,4 +1,5 @@
 import * as React from 'react'
+import Image from 'next/image'
 import Layout from '../Layout'
 import Navbar from '@organisms/Navbar/Navbar'
 import Wrapper from '@atoms/Wrapper/Wrapper'
@@ -10,11 +11,12 @@ import Icon from '@atoms/Icon/Icon'
 import ProjectCard from '@organisms/ProjectCard/ProjectCard'
 import Background from '@atoms/Background/Background'
 import Mailto from '@organisms/Mailto/Mailto'
-import Image from 'next/image'
+import ProjectImage from '@molecules/ProjectImage/ProjectImage'
 import ListItems from '@atoms/ListItems/ListItems'
 import { ListItemStyled } from '@atoms/ListItems/ListItemsStyled'
 import { projectCardItems, Props as ProjectCardItemsProps } from '../../../static/utils/ProjectCardItems'
 import { skillsItems, Props as SkillsItemsProps } from '../../../static/utils/SkillsItems'
+import { projectImageItems, Props as ProjectImageItemsProps } from '../../../static/utils/ProjectImageItems'
 import { RiMessage2Line } from 'react-icons/ri'
 import worksut from '../../../static/img/worksut.jpg'
 import losTercios from '../../../static/img/losTercios.png'
@@ -22,6 +24,11 @@ import dooboolab from '../../../static/img/dooboolab.png'
 import upwork from '../../../static/img/upwork.png'
 
 const HomeTemplate: React.FC = () => {
+
+  if (typeof window != 'undefined') {
+    var contact = window.document.getElementById('contact')
+  }
+
   return (
     <main>
       <Layout title='Portfolio | Yevhenbk' />
@@ -35,7 +42,7 @@ const HomeTemplate: React.FC = () => {
         <div 
           className='
           w-[35rem] absolute 
-          top-40 left-32
+          top-52 left-32
           min-[1736px]:top-[16rem] 
           min-[1736px]:left-60'
         >
@@ -70,35 +77,36 @@ const HomeTemplate: React.FC = () => {
             fontSize={21}
             fontWeight={600}
             fontFamily='Poppins, serif'
-            width='30rem'
+            // width='30rem'
           >
             <p>
               I’m a software engineer with over 4 years of
               experience specializing in building 
-              (and occasionally designing)
-              exceptional digital experiences.
+              and designing exceptional digital experiences.
             </p>
           </Text>
           <Button
             color='white'
-            background='linear-gradient(to left, #D17F82, #5A3BF8)'
+            background='linear-gradient(to left, #D446E2, #5A3BF8)'
             radius={50}
             fontFamily='Poppins, serif'
             fontWeight={500}
             padding='.5rem 1.5rem'
             fontSize={18}
             margin='2rem 0 0'
-            isAnimated={true}
+            isAnimated={false}
             display='flex'
             flexDirection='row'
             justify='space-between'
             items='center'
             width='12.5rem'
-            hoverBackground='linear-gradient(to left, #D17F82, #9B60B8)'
+            hoverBackground='#D446E2'
+            onClick={() => {
+              if (contact != null) {contact.scrollIntoView({behavior:'smooth'})}
+            }}
           >
             Contact me
             <Icon 
-              // background='white'
               width={35}
               height={35}
               padding='0.5rem'
@@ -107,8 +115,6 @@ const HomeTemplate: React.FC = () => {
               right='-1rem'
               fontSize='1.125rem'
               color='white'
-              // className='
-              // group-hover:rotate-[-45deg]'
               isAnimated={true}
             >
               <RiMessage2Line />
@@ -118,8 +124,11 @@ const HomeTemplate: React.FC = () => {
       </Wrapper>
       <div
         className='
-        pt-[52rem] 
-        min-[1736px]:pt-[57rem]'
+        mt-[42rem] 
+        pt-[10rem]
+        min-[1736px]:mt-[47rem]
+        min-[1736px]:pt-[17rem]'
+        id='work'
       >
         <Wrapper
           justifyContent='center'
@@ -127,7 +136,9 @@ const HomeTemplate: React.FC = () => {
           alignItems='center'
           padding='0 0 4rem'
         >
-          <div className='w-0 h-0'>
+          <div 
+            className='w-0 h-0'
+          >
             {/* <Background 
               position='absolute'
               top='85rem'
@@ -209,88 +220,6 @@ const HomeTemplate: React.FC = () => {
               />
             ))}
           </div>
-          {/* <div
-            className='
-            flex
-            flex-col
-            items-center
-            w-[100vw]
-            pt-[12rem]
-            min-[1736px]:w-[80vw]'
-          >
-            <Text
-            color='black'
-            fontSize={52}
-            fontFamily='Poppins, serif'
-            fontWeight={900}
-            lineHeight='1.25'
-            textAlign='start'
-            >
-              <h1>Skills</h1>
-            </Text> 
-            <Text 
-              color='black'
-              fontSize={21}
-              fontWeight={600}
-              fontFamily='Poppins, serif'
-              lineHeight='2.5'
-              zIndex={9}
-              textAlign='center'
-            >
-              *List of my favourite technologies 
-              I work with the most*
-            </Text>
-            <div
-              className='
-              flex
-              flex-row
-              justify-around
-              w-[100%]
-              pt-[4rem]'
-            >
-              {skillsItems.map((item: SkillsItemsProps) => (
-                <ListItems 
-                 title={item.title}>
-                  <ListItemStyled>
-                    {item.skillOne}
-                  </ListItemStyled>
-                  <ListItemStyled>
-                    {item.skillTwo}
-                  </ListItemStyled>
-                  <ListItemStyled>
-                    {item.skillThree}
-                  </ListItemStyled>
-                  <ListItemStyled>
-                    {item.skillFour}
-                  </ListItemStyled>
-                  <ListItemStyled>
-                    {item.skillFive}
-                  </ListItemStyled>
-                  <ListItemStyled>
-                    {item.skillSix}
-                  </ListItemStyled>
-                  <ListItemStyled>
-                    {item.skillSeven}
-                  </ListItemStyled>
-                  <ListItemStyled>
-                    {item.skillEight}
-                  </ListItemStyled>
-                  <ListItemStyled>
-                    {item.skillNine}
-                  </ListItemStyled>
-                  <ListItemStyled>
-                    {item.skillTen}
-                  </ListItemStyled>
-                  <ListItemStyled>
-                    {item.skillEleven}
-                  </ListItemStyled>
-                  <ListItemStyled>
-                    {item.skillTwelve}
-                  </ListItemStyled>
-                 </ListItems>
-              ))}
-            </div>
-          </div> */}
           <div
             className='
             pt-[10rem]
@@ -300,6 +229,7 @@ const HomeTemplate: React.FC = () => {
             flex-col
             gap-[4rem]
             items-center'
+            id='about'
           >
             <Text 
               color='black'
@@ -350,10 +280,11 @@ const HomeTemplate: React.FC = () => {
               flex
               flex-row
               justify-around
-              pt-[4rem]
+              pt-[8rem]
               items-center
-              w-[100vw]
+              w-[90vw]
               min-[1736px]:w-[80vw]'
+              id='contact'
             >
               <div
                 className='
@@ -466,6 +397,28 @@ const HomeTemplate: React.FC = () => {
                 just want to say hi, I will always get back to you! Reach out 
                 and let's build amaizing experiences together!
               </Text>
+              <div
+                className='
+                flex
+                flex-row
+                w-[100%]
+                justify-around
+                pt-[10rem]
+                pb-[4rem]'
+              >
+                 {projectImageItems.map((item: ProjectImageItemsProps) => (
+                  <ProjectImage
+                    key={item.id} 
+                    myKey={item.id}
+                    background={item.background}
+                    top={item.top}
+                    left={item.left}
+                    right={item.right}
+                    zIndex={item.zIndex}
+                    title={item.title}
+                  />
+                 ))}
+              </div>
             </div>
           </div>
         </div>

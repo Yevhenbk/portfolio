@@ -1,6 +1,6 @@
-import { BackgroundStyled, Props as BackgroundStyledProps } from './BackgroundStyled'
+import { BackgroundStyled, Props } from './BackgroundStyled'
 
-const Background: React.FC<BackgroundStyledProps> = (props) => {
+const Background: React.FC<Props> = (props) => {
   return (
     <BackgroundStyled {...props} />
   )

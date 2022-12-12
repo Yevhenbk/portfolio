@@ -4,13 +4,17 @@ import { WrapperStyled,
 
 interface Props
   extends WrapperStyledProps {
-    children: React.ReactNode
+    children: React.ReactNode,
+    id?: string
   }    
 
 
 const Wrapper: React.FC<Props> = (props) => {
   return (
-    <WrapperStyled {...props}>
+    <WrapperStyled 
+      id={props.id}
+      {...props}
+    >
       {props.children}
     </WrapperStyled>
   )

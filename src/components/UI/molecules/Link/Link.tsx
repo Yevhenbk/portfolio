@@ -5,7 +5,8 @@ interface Props
   extends LinkStyledProps {
     myKey?: number,
     children: React.ReactNode,
-    href?: string
+    href?: string,
+    onClick?: React.MouseEventHandler
   }
 
 const Link: React.FC<Props> = (props) => {
@@ -13,6 +14,7 @@ const Link: React.FC<Props> = (props) => {
     <LinkStyled 
       key={props.myKey}
       href={props.href}
+      onClick={props.onClick}
       target='_blank'
       {...props}
     >

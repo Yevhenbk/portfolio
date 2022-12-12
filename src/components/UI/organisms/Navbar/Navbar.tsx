@@ -28,7 +28,17 @@ const Navbar: React.FC = () => {
             padding='.35rem .85rem'
             borderRadius='2px'
             hoverBackground={global.scrollY >= 10 ?
-            '#fff' : '#cacacaa9'}>
+            '#fff' : '#cacacaa9'}
+            onClick={() => {
+              if (typeof window != 'undefined') {
+                var title = window.document.getElementById(item.title)
+
+                if (title != null) {
+                  title.scrollIntoView({behavior:'smooth'})
+                }
+              }
+            }}
+          >
             <span className='text-[#5A3BF8]'>
               {item.number}.
             </span>
