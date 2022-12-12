@@ -71,6 +71,7 @@ const Navbar: React.FC = () => {
           items-end'
         >
           <Link
+          href='https://github.com/Yevhenbk'
           fontSize={24}
           color='black' 
           padding='.35rem'

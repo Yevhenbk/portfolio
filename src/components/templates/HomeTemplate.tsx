@@ -139,13 +139,13 @@ const HomeTemplate: React.FC = () => {
           <div 
             className='w-0 h-0'
           >
-            {/* <Background 
+            <Background 
               position='absolute'
               top='85rem'
               width='100vw'
               height='100%'
               background='url(../../../static/img/waves.svg)'
-            /> */}
+            />
           </div>
           <Text 
             color='black'
@@ -165,7 +165,7 @@ const HomeTemplate: React.FC = () => {
             lineHeight='2.5'
             zIndex={9}
           >
-            *Includes my personal and professional projects*
+            Includes my personal and professional projects
           </Text>
           <Link
             fontFamily='Poppins, serif'
@@ -185,11 +185,10 @@ const HomeTemplate: React.FC = () => {
             grid
             grid-cols-3
             justify-items-center
-            w-[100%]
+            w-[90%]
             pt-[4rem]
-            gap-x-[2rem]
-            gap-y-[5rem]
-            min-[1736px]:w-[80vw]'
+            gap-y-[5.5rem]
+            min-[1736px]:w-[70vw]'
           >
             {projectCardItems.map((item: ProjectCardItemsProps) => (
               <ProjectCard 
