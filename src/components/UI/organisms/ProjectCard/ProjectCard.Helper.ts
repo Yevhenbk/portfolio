@@ -12,6 +12,6 @@ export const IconWrapperStyled = tw.div`
   justify-between
   gap-2
   p-[.25rem .5rem .25rem .25rem]
-  bg-[#cacaca8d]
+  bg-[rgba(255, 255, 255, 0.3)]
   rounded-full
 `

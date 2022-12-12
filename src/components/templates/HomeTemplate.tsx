@@ -209,7 +209,7 @@ const HomeTemplate: React.FC = () => {
               />
             ))}
           </div>
-          <div
+          {/* <div
             className='
             flex
             flex-col
@@ -290,10 +290,10 @@ const HomeTemplate: React.FC = () => {
                  </ListItems>
               ))}
             </div>
-          </div>
+          </div> */}
           <div
             className='
-            pt-[12rem]
+            pt-[10rem]
             pb-[3rem]
             text-center
             flex
@@ -313,7 +313,7 @@ const HomeTemplate: React.FC = () => {
             </Text>
             <Text
               color='#616161'
-              fontSize={24}
+              fontSize={21}
               fontWeight={500}
               fontFamily='Poppins, serif'
               width='60rem'
