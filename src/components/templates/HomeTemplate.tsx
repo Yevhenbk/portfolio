@@ -360,7 +360,7 @@ const HomeTemplate: React.FC = () => {
                 flex
                 flex-row
                 items-center
-                gap-[1rem]'
+                gap-[.5rem]'
               >
                 <Image 
                   src={worksut}
