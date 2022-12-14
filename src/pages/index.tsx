@@ -25,7 +25,7 @@ const Home: NextPage = () => {
             fontSize={21}
             fontWeight={600}
             fontFamily='Poppins, serif'
-            width='30rem'
+            width='20rem'
           >
             <p>
               Hey there! Mobile version is 
