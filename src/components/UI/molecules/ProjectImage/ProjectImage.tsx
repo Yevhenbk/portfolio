@@ -2,12 +2,15 @@ import { ProjectImageStyled, Props as ProjectImageProps } from './ProjectImageSt
 
 interface Props
   extends ProjectImageProps {
-    myKey: number
+    myKey: number,
+    href: string
   }
 
 const ProjectImage: React.FC<Props> = (props) => {
   return (
-    <ProjectImageStyled {...props}/>
+    <a href={props.href} target='_blank'>
+      <ProjectImageStyled {...props}/>
+    </a>
   )
 }
 

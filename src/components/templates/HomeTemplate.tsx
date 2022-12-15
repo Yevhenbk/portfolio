@@ -22,6 +22,7 @@ import worksut from '../../../static/img/worksut.jpg'
 import losTercios from '../../../static/img/losTercios.png'
 import dooboolab from '../../../static/img/dooboolab.png'
 import upwork from '../../../static/img/upwork.png'
+import Footer from '@organisms/Footer/Footer'
 
 const HomeTemplate: React.FC = () => {
 
@@ -125,10 +126,8 @@ const HomeTemplate: React.FC = () => {
       <div
         className='
         mt-[42rem] 
-        pt-[10rem]
-        min-[1736px]:mt-[47rem]
-        min-[1736px]:pt-[17rem]'
-        id='work'
+        min-[1736px]:mt-[50rem]'
+        // id='work'
       >
         <Wrapper
           justifyContent='center'
@@ -136,7 +135,7 @@ const HomeTemplate: React.FC = () => {
           alignItems='center'
           padding='0 0 4rem'
         >
-          <div 
+          {/* <div 
             className='w-0 h-0'
           >
             <Background 
@@ -218,7 +217,7 @@ const HomeTemplate: React.FC = () => {
                 isStrapi={item.isStrapi}
               />
             ))}
-          </div>
+          </div> */}
           <div
             className='
             pt-[10rem]
@@ -226,7 +225,7 @@ const HomeTemplate: React.FC = () => {
             text-center
             flex
             flex-col
-            gap-[4rem]
+            gap-[2rem]
             items-center'
             id='about'
           >
@@ -241,9 +240,9 @@ const HomeTemplate: React.FC = () => {
               About Me
             </Text>
             <Text
-              color='#616161'
+              color='black'
               fontSize={21}
-              fontWeight={500}
+              fontWeight={600}
               fontFamily='Poppins, serif'
               width='60rem'
               textAlign='center'
@@ -285,7 +284,7 @@ const HomeTemplate: React.FC = () => {
               min-[1736px]:w-[80vw]'
               id='contact'
             >
-              <div
+              {/* <div
                 className='
                 flex
                 flex-row
@@ -308,7 +307,7 @@ const HomeTemplate: React.FC = () => {
                 >
                   Worksut
                 </Text>
-              </div>
+              </div> */}
               <Image 
                 src={losTercios}
                 alt='Worksut'
@@ -368,7 +367,7 @@ const HomeTemplate: React.FC = () => {
             />
             <div
               className='
-              pt-[6rem]
+              pt-[10rem]
               flex
               flex-col
               gap-[2rem]
@@ -396,6 +395,19 @@ const HomeTemplate: React.FC = () => {
                 just want to say hi, I will always get back to you! Reach out 
                 and let's build amaizing experiences together!
               </Text>
+              <Link
+                fontFamily='Poppins, serif'
+                borderRadius='50px'
+                border='1px solid black'
+                padding='.35rem 1rem'
+                hoverBackground='black'
+                hoverColor='white'
+                isAnimated={true}
+                margin='.5rem 0 0'
+                href='https://github.com/Yevhenbk?tab=repositories'
+              >
+                View the archive
+              </Link>
               <div
                 className='
                 flex
@@ -404,6 +416,7 @@ const HomeTemplate: React.FC = () => {
                 justify-around
                 pt-[10rem]
                 pb-[4rem]'
+                id='work'
               >
                  {projectImageItems.map((item: ProjectImageItemsProps) => (
                   <ProjectImage
@@ -415,9 +428,11 @@ const HomeTemplate: React.FC = () => {
                     right={item.right}
                     zIndex={item.zIndex}
                     title={item.title}
+                    href={item.href}
                   />
                  ))}
               </div>
+              <Footer />
             </div>
           </div>
         </div>

@@ -6,7 +6,7 @@ export interface Props {
 }
 
 export const menuItems: Props[] = [
-  { id: 1, name: "Work", number: "01", title: "work" },
-  { id: 2, name: "About", number: "02", title: "about"},
-  { id: 3, name: "Contact", number: "03", title: "contact" }
+  { id: 1, name: "About", number: "01", title: "about" },
+  { id: 2, name: "Contact", number: "02", title: "contact"},
+  { id: 3, name: "Work", number: "03", title: "work" }
 ]

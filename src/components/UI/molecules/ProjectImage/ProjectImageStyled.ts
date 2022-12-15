@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import tw from 'twin.macro'
+import { animated } from 'react-spring'
 
 export interface Props {
   background: string,
