@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
       <div 
         className='
         w-[40vw]
-        h-[.15rem]
+        h-[.1rem]
         bg-[grey]'
       />
       <Text 
@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
       <div 
         className='
         w-[40vw]
-        h-[.15rem]
+        h-[.1rem]
         bg-[grey]'
       />
     </FooterStyled>
