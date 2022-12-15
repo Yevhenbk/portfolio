@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
         className='
         w-[40vw]
         h-[.1rem]
-        bg-[grey]'
+        bg-[#d0d0d0]'
       />
       <Text 
         color='black'
@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
         className='
         w-[40vw]
         h-[.1rem]
-        bg-[grey]'
+        bg-[#d0d0d0]'
       />
     </FooterStyled>
   )
