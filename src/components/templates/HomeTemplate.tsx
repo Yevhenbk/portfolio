@@ -26,10 +26,6 @@ import Footer from '@organisms/Footer/Footer'
 
 const HomeTemplate: React.FC = () => {
 
-  if (typeof window != 'undefined') {
-    var contact = window.document.getElementById('contact')
-  }
-
   return (
     <main>
       <Layout title='Portfolio | Yevhenbk' />
@@ -103,7 +99,13 @@ const HomeTemplate: React.FC = () => {
             width='12.5rem'
             hoverBackground='#D446E2'
             onClick={() => {
-              if (contact != null) {contact.scrollIntoView({behavior:'smooth'})}
+              if (typeof window != 'undefined') {
+                var title = window.document.getElementById('contact')
+
+                if (title != null) {
+                  title.scrollIntoView({behavior:'smooth'})
+                }
+              }
             }}
           >
             Contact me
