@@ -46,7 +46,7 @@ const HomeTemplate: React.FC = () => {
           <Text
             color='black'
             fontSize={21}
-            fontWeight={600}
+            fontWeight={500}
             fontFamily='Poppins, serif'
           >
             <p>Hey there! My name is</p>
@@ -72,7 +72,7 @@ const HomeTemplate: React.FC = () => {
           <Text
             color='black'
             fontSize={21}
-            fontWeight={600}
+            fontWeight={500}
             fontFamily='Poppins, serif'
             // width='30rem'
           >
@@ -161,7 +161,7 @@ const HomeTemplate: React.FC = () => {
           <Text 
             color='black'
             fontSize={21}
-            fontWeight={600}
+            fontWeight={500}
             fontFamily='Poppins, serif'
             lineHeight='2.5'
             zIndex={9}
@@ -244,7 +244,7 @@ const HomeTemplate: React.FC = () => {
             <Text
               color='black'
               fontSize={21}
-              fontWeight={600}
+              fontWeight={500}
               fontFamily='Poppins, serif'
               width='60rem'
               textAlign='center'
@@ -304,7 +304,7 @@ const HomeTemplate: React.FC = () => {
                 <Text
                   color='#FF524A'
                   fontSize={24}
-                  fontWeight={600}
+                  fontWeight={500}
                   fontFamily='serif'
                 >
                   Worksut
@@ -388,7 +388,7 @@ const HomeTemplate: React.FC = () => {
               <Text
                 color='black'
                 fontSize={21}
-                fontWeight={600}
+                fontWeight={500}
                 fontFamily='Poppins, serif'
                 width='60rem'
                 textAlign='center'
