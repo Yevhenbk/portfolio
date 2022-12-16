@@ -364,7 +364,7 @@ const HomeTemplate: React.FC = () => {
             items-center'
           >
             <Mailto 
-              title='What is next?'
+              title='Get in touch'
               buttonTitle='Contact me'
             />
             <div
@@ -383,7 +383,7 @@ const HomeTemplate: React.FC = () => {
                 lineHeight='1.25'
                 zIndex={9}
               >
-                Get in Touch
+                What is next?
               </Text>
               <Text
                 color='black'
