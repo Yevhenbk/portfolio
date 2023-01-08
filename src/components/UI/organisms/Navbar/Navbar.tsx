@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
     <NavbarStyled
     isWhite={ navbar ? true : false }>
       <DivStyled
-        width='32rem'
+        width='38rem'
       >
         {menuItems.map((item: menuItemsProps ) => (
           <Link 

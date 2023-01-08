@@ -92,7 +92,7 @@ const HomeTemplate: React.FC = () => {
             hoverBackground='#D446E2'
             onClick={() => {
               if (typeof window != 'undefined') {
-                var title = window.document.getElementById('contact')
+                var title = window.document.getElementById('about')
 
                 if (title != null) {
                   title.scrollIntoView({behavior:'smooth'})
@@ -123,6 +123,7 @@ const HomeTemplate: React.FC = () => {
         min-[1736px]:mt-[62rem]
         grid grid-cols-3 gap-8
         p-8 w-[100vw] overflow-hidden'
+        id='skills'
       >
         <ExperienceTable />
         <SkillsTable />
@@ -130,6 +131,7 @@ const HomeTemplate: React.FC = () => {
       <div
         className='
         py-12'
+        id='work'
       >
         <Carousel />
       </div>
@@ -139,6 +141,7 @@ const HomeTemplate: React.FC = () => {
         justify-around
         items-center pt-12
         pb-40'
+        id='about'
       >
         <Mailto />
         <div
