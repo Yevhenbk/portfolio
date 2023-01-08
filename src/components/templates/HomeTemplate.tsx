@@ -138,7 +138,7 @@ const HomeTemplate: React.FC = () => {
         flex flex-row-reverse
         justify-around
         items-center pt-12
-        pb-24'
+        pb-40'
       >
         <Mailto />
         <div
