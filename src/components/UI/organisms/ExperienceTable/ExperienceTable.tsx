@@ -49,7 +49,7 @@ const InfoWrapper: React.FC<ExperienceWrapperProps> = ({date, description}) => {
         fontFamily='Poppins'
         fontSize={16}
         color='white'
-        width='30rem'
+        width='26rem'
       >
         {description}
       </Text>
