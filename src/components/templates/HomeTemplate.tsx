@@ -9,7 +9,8 @@ import SkillsTable from '@organisms/SkillsTable/SkillsTable'
 import ExperienceTable from '@organisms/ExperienceTable/ExperienceTable'
 import { RiMessage2Line } from 'react-icons/ri'
 import Carousel from '@organisms/Carousel/Carousel'
-import Link from '@molecules/Link/Link'
+import Mailto from '@organisms/Mailto/Mailto'
+import Footer from '@organisms/Footer/Footer'
 
 const HomeTemplate: React.FC = () => {
 
@@ -125,207 +126,6 @@ const HomeTemplate: React.FC = () => {
       >
         <ExperienceTable />
         <SkillsTable />
-        {/* <div
-          className='
-          flex flex-col
-          justify-center
-          items-center
-          pb-[4rem]'
-        >
-          <div
-            className='
-            pt-[10rem]
-            pb-[3rem]
-            text-center
-            flex
-            flex-col
-            gap-[2rem]
-            items-center'
-            id='about'
-          > */}
-            {/* <Text 
-              color='black'
-              fontSize={52}  
-              fontFamily='Poppins'
-              fontWeight={900}
-              lineHeight='1.25'
-              zIndex={9}
-            >
-              About Me
-            </Text>
-            <Text
-              color='black'
-              fontSize={21}
-              fontWeight={500}
-              fontFamily='Poppins'
-              width='60rem'
-              textAlign='center'
-            >
-              <p>
-                Hello! My name is Yevhen and I enjoy creating things 
-                that live on the internet. My interest in web development 
-                started back in 2018 when I decided to take Python course
-                at a <a href='https://www.uc3m.es/Inicio' className='text-[#5A3BF8]
-                hover:text-[#5A3BC9] hover:underline' target='_blank'>university</a>.
-              </p>
-              <br/>
-              <p>
-                After 3 years of studying Business Administration, I have decided 
-                to reconvert into a developer to become more independent by
-                following a 9 weeks coding <a href='https://4geeksacademy.com/es/inicio' 
-                className='text-[#5A3BF8] hover:text-[#5A3BC9] hover:underline' target='_blank'>bootcamp</a>. 
-                I am a highly driven and self starter and enjoy talking about new projects and
-                responsibilities. Finding ways to grow and push myself is always a
-                priority for both in professional settings or in my personal endeavors.
-              </p>
-              <br/>
-              <p>
-                Recently I worked on a <a href='https://twitter.com/worksut_' className='text-[#5A3BF8]
-                hover:text-[#5A3BC9] hover:underline' target='_blank'>startup</a> with designers and management team to develop a
-                <a href='https://worksut.netlify.app/' className='text-[#5A3BF8] hover:text-[#5A3BC9] hover:underline' 
-                target='_blank'> landing page</a> for the company. Currently I am looking for new opportunities, 
-                so don't hesistate to reach out :)
-              </p>
-            </Text>
-            <div
-              className='
-              flex
-              flex-row
-              justify-around
-              pt-[8rem]
-              items-center
-              w-[90vw]
-              min-[1736px]:w-[80vw]'
-              id='contact'
-            >
-              <Image 
-                src={losTercios}
-                alt='Worksut'
-                className='
-                w-[10rem]
-                object-cover'
-              />
-              <Image 
-                src={upwork}
-                alt='Worksut'
-                className='
-                w-[8rem]
-                object-cover'
-              />
-              <Image 
-                src={dooboolab}
-                alt='Worksut'
-                className='
-                w-[6rem]
-                object-cover'
-              />
-              <Background 
-                position='relative'
-                width='10rem'
-                height='1.7rem'
-                background='url(../../../static/img/cgSpark.svg)'
-              />
-              <Background 
-                position='relative'
-                width='12rem'
-                height='3rem'
-                background='url(../../../static/img/norteHispana.svg)'
-              />
-            </div> */}
-          {/* </div>
-        </div> */}
-        {/* <div
-          className='
-          flex
-          flex-col
-          items-center
-          bg-[#e5e5e5]
-          border-t-[1px]
-          border-[#d0d0d0]'
-        >
-          <div
-            className='
-            relative
-            -top-[2.5rem]
-            flex
-            flex-col
-            items-center'
-          >
-            <Mailto 
-              title='Get in touch'
-              buttonTitle='Contact me'
-            />
-            <div
-              className='
-              pt-[10rem]
-              flex
-              flex-col
-              gap-[2rem]
-              items-center'
-            >
-              <Text 
-                color='black'
-                fontSize={52}  
-                fontFamily='Poppins'
-                fontWeight={900}
-                lineHeight='1.25'
-                zIndex={9}
-              >
-                What is next?
-              </Text>
-              <Text
-                color='black'
-                fontSize={21}
-                fontWeight={500}
-                fontFamily='Poppins'
-                width='60rem'
-                textAlign='center'
-              >
-                My inbox is always open. Whether you have a question or 
-                just want to say hi, I will always get back to you! Reach out 
-                and let's build amaizing experiences together!
-              </Text>
-              <Link
-                fontFamily='Poppins'
-                borderRadius='50px'
-                border='1px solid black'
-                padding='.35rem 1rem'
-                hoverBackground='black'
-                hoverColor='white'
-                isAnimated={true}
-                margin='.5rem 0 0'
-                href='https://github.com/Yevhenbk?tab=repositories'
-              >
-                View the archive
-              </Link>
-              <div
-                className='
-                flex
-                flex-row
-                w-[100%]
-                justify-around
-                pt-[10rem]
-                pb-[4rem]'
-                id='work'
-              >
-                 {projectImageItems.map((item: ProjectImageItemsProps) => (
-                  <ProjectImage
-                    key={item.id} 
-                    myKey={item.id}
-                    background={item.background}
-                    top={item.top}
-                    left={item.left}
-                    right={item.right}
-                    zIndex={item.zIndex}
-                    title={item.title}
-                    href={item.href}
-                  />
-                 ))}
-              </div>
-              <Footer />
-            </div>
-          </div>
-        </div> */}
       </div>
       <div
         className='
@@ -333,6 +133,61 @@ const HomeTemplate: React.FC = () => {
       >
         <Carousel />
       </div>
+      <div
+        className='
+        flex flex-row-reverse
+        justify-around
+        items-center pt-12
+        pb-24'
+      >
+        <Mailto />
+        <div
+          className='
+          text-start w-[55rem]
+          flex flex-col gap-5'
+        >
+          <Text 
+            fontFamily='Poppins'
+            fontSize={36}
+            fontWeight={900}
+            lineHeight='1.25'
+          >
+            About Me
+          </Text>
+          <Text
+            fontSize={18}
+            fontWeight={500}
+            fontFamily='Poppins'
+          >
+            <p>
+              Hello! My name is Yevhen and I enjoy creating things 
+              that live on the internet. My interest in web development 
+              started back in 2018 when I decided to take Python course
+              at a <a href='https://www.uc3m.es/Inicio' className='text-[#5A3BF8]
+              hover:text-[#5A3BC9] hover:underline' target='_blank'>university</a>.
+            </p>
+            <br/>
+            <p>
+              After 3 years of studying Business Administration, I have decided 
+              to reconvert into a developer to become more independent by
+              following a 9 weeks coding <a href='https://4geeksacademy.com/es/inicio' 
+              className='text-[#5A3BF8] hover:text-[#5A3BC9] hover:underline' target='_blank'>bootcamp</a>. 
+              I am a highly driven and self starter and enjoy talking about new projects and
+              responsibilities. Finding ways to grow and push myself is always a
+              priority for both in professional settings or in my personal endeavors.
+            </p>
+            <br/>
+            <p>
+              Recently I worked on a <a href='https://twitter.com/worksut_' className='text-[#5A3BF8]
+              hover:text-[#5A3BC9] hover:underline' target='_blank'>startup</a> with designers and management team to develop a
+              <a href='https://worksut.netlify.app/' className='text-[#5A3BF8] hover:text-[#5A3BC9] hover:underline' 
+              target='_blank'> landing page</a> for the company. Currently I am looking for new opportunities, 
+              so don't hesistate to reach out.
+            </p>
+          </Text>
+        </div>
+      </div>
+      <Footer />
     </main>
   )
 }

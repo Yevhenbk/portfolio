@@ -4,26 +4,26 @@ import Text from '@atoms/Text/Text'
 const Footer: React.FC = () => {
   return (
     <FooterStyled>
-      <div 
+      {/* <div 
         className='
         w-[40vw]
         h-[.1rem]
-        bg-[#d0d0d0]'
-      />
+        bg-[#432E52]'
+      /> */}
       <Text 
-        color='black'
+        color='white'
         fontSize={18}  
-        fontFamily='Poppins, serif'
+        fontFamily='Share Tech Mono'
         fontWeight={400}
       >
-        Created by Yevhenbk® 2022
+        Designed and build by Yevhen Balahutrak ® 2022
       </Text>
-      <div 
+      {/* <div 
         className='
         w-[40vw]
         h-[.1rem]
-        bg-[#d0d0d0]'
-      />
+        bg-[#432E52]'
+      /> */}
     </FooterStyled>
   )
 }

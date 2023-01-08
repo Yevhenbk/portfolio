@@ -38,7 +38,7 @@ export default function App({ Component, pageProps }: AppProps) {
             <RaceBy 
               size={80}
               speed={0.9} 
-              color='black'
+              color='#D446E2'
             />
           </div>}
       </ContextProvider>

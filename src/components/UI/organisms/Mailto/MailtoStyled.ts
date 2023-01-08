@@ -1,20 +1,22 @@
 import tw from 'twin.macro'
-import { animated } from 'react-spring'
 
-export const MailtoStyled = tw(animated.div)`
+export const MailtoStyled = tw.div`
   flex
-  flex-row
-  p-[1rem]
-  justify-between
+  flex-col
+  justify-start
+  gap-12
+  p-12
   items-center
   h-[5rem]
   w-[30rem]
-  bg-white/30
-  backdrop-blur-sm
-  rounded-md
+  // bg-[#432E52]
+  bg-gradient-to-l
+  from-[#D17F82] to-[#940F93] 
+  rounded-xl
   border-solid
-  border-[1px]
-  border-[rgba(255, 255, 255, 0.7)]
-  z-10
+  z-30
+  min-w-[25rem]
+  min-h-[35rem]
+  overflow-hidden
 `
 

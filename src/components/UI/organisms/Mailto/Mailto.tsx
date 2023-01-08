@@ -1,51 +1,80 @@
 import { MailtoStyled } from './MailtoStyled'
-import { useSpring, config } from 'react-spring'
+import { IconWrapperStyled,
+  Props as IconWrapperStyledProps } from './Mailto.Helper'
 import Text from '@atoms/Text/Text'
 import Button from '@molecules/Button/Button'
+import Image from 'next/image'
+import avatar from '../../../../../static/img/avatar.jpg'
+import gmail from '../../../../../static/img/gmail.png'
 
-interface Props {
-  title: string,
-  buttonTitle: string  
+const IconWrapper: React.FC<IconWrapperStyledProps> = (props) => {
+  return (
+    <IconWrapperStyled
+      onClick={props.onClick}
+    >
+      {props.children}
+    </IconWrapperStyled>
+  )
 }
 
-const calc = (x: any, y: any) => [-(y - window.innerHeight / 2) / 40, (x - window.innerWidth / 2) / 40, 1]
-const trans = (x: any, y: any, s: any) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
-
-const Mailto: React.FC<Props> = (props) => {
-
-  const [prop, set] = useSpring(() => ({ xys: [0, 0, 1] , config: config.default})) 
+const Mailto: React.FC = () => {
 
   return (
-    <MailtoStyled
-      onMouseMove={({clientX: x, clientY: y}) => (set({xys: calc(x, y)}))}
-      onMouseLeave={() => set({xys:[0,0,1]})}
-      style={{
-          transform: prop.xys.interpolate(trans)
-      }}
-    >
-      <Text
-        color='black'
-        fontFamily='Poppins, serif'
-        fontWeight={700}
-        fontSize={32}
+    <MailtoStyled>
+      <div>
+        <Image 
+          src={avatar} 
+          alt='avatar'
+          className='
+          rounded-full
+          w-[8rem] h-[8rem]
+          object-cover' 
+        />
+      </div>
+      <div
+        className='
+        flex flex-col
+        gap-5'
       >
-        {props.title}
-      </Text>
-      <Button
-        color='white'
-        background='#5A3BF8'
-        hoverBackground='transparent'
-        hoverColor='#5A3BF8'
-        border='1px solid #5A3BF8'
-        fontSize={21}
-        fontFamily='Share Tech Mono, serif'
-        padding='.25rem 2rem'
-        radius={3}
-        isAnimated={true}
+        <Text
+          color='white'
+          fontSize={24}
+          fontWeight={600}
+          fontFamily='Poppins'
+        >
+          Hi, it's me again! &#128075;
+        </Text>
+        <Text
+          color='white'
+          fontSize={16}
+          fontWeight={400}
+          width='23rem'
+          fontFamily='Poppins'
+        >
+          My inbox is always open. Whether you have a question or 
+          just want to say hi, I will always get back to you! Reach 
+          out and let's build amaizing experiences together!
+        </Text>
+      </div>
+      <IconWrapper
         onClick={() => global.location.href = 'mailto:balagutrak.jenia@gmail.com'}
       >
-        {props.buttonTitle}
-      </Button>  
+        <Image 
+          src={gmail} 
+          alt='gmail'
+          className='
+          w-8
+          object-cover' 
+        />
+        <Text
+          color='#F63533'
+          fontSize={21}
+          fontWeight={600}
+          fontFamily='Poppins'
+        >
+          Get in Touch
+        </Text>
+      </IconWrapper>
     </MailtoStyled>
   )
 }

@@ -4,7 +4,9 @@ export const FooterStyled = tw.div`
   flex
   flex-row
   w-[100vw]
-  pt-[2rem]
+  py-[3rem]
+  pl-[4rem]
   items-center
-  justify-between
+  justify-start
+  bg-[#432E52]
 `

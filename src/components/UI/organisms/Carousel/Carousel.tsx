@@ -71,7 +71,7 @@ const Carousel: React.FC = () => {
             width='26rem'
           >
             Some of my personal 
-            and professional works
+            & professional works
           </Text>
           <Text
             fontSize={21}
