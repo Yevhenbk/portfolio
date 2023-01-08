@@ -19,7 +19,7 @@ export const NavbarStyled = styled.div((props: Props) => [
      justify-around
      ease-in 
      duration-200
-     z-40`  
+     z-50`  
 ])
 
 export const DivStyled = styled.div((props: Props) => [
