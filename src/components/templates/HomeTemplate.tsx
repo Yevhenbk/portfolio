@@ -1,28 +1,15 @@
 import * as React from 'react'
-import Image from 'next/image'
 import Layout from '../Layout'
 import Navbar from '@organisms/Navbar/Navbar'
-import Wrapper from '@atoms/Wrapper/Wrapper'
 import Text from '@atoms/Text/Text'
 import Button from '@molecules/Button/Button'
 import Iframe from '@atoms/Iframe/Iframe'
-import Link from '@molecules/Link/Link'
 import Icon from '@atoms/Icon/Icon'
-import ProjectCard from '@organisms/ProjectCard/ProjectCard'
-import Background from '@atoms/Background/Background'
-import Mailto from '@organisms/Mailto/Mailto'
-import ProjectImage from '@molecules/ProjectImage/ProjectImage'
-import ListItems from '@atoms/ListItems/ListItems'
-import { ListItemStyled } from '@atoms/ListItems/ListItemsStyled'
-import { projectCardItems, Props as ProjectCardItemsProps } from '../../../static/utils/ProjectCardItems'
-import { skillsItems, Props as SkillsItemsProps } from '../../../static/utils/SkillsItems'
-import { projectImageItems, Props as ProjectImageItemsProps } from '../../../static/utils/ProjectImageItems'
+import SkillsTable from '@organisms/SkillsTable/SkillsTable'
+import ExperienceTable from '@organisms/ExperienceTable/ExperienceTable'
 import { RiMessage2Line } from 'react-icons/ri'
-import worksut from '../../../static/img/worksut.jpg'
-import losTercios from '../../../static/img/losTercios.png'
-import dooboolab from '../../../static/img/dooboolab.png'
-import upwork from '../../../static/img/upwork.png'
-import Footer from '@organisms/Footer/Footer'
+import Carousel from '@organisms/Carousel/Carousel'
+import Link from '@molecules/Link/Link'
 
 const HomeTemplate: React.FC = () => {
 
@@ -30,16 +17,18 @@ const HomeTemplate: React.FC = () => {
     <main>
       <Layout title='Portfolio | Yevhenbk' />
       <Navbar />  
-      <Wrapper
-        justifyContent='space-around'
-        direction='row'
-        alignItems='center'
+      <div
+        className='
+        flex flex-row
+        justify-around
+        items-center'
       >
         <Iframe />
         <div 
           className='
+          flex flex-col gap-5
           w-[35rem] absolute 
-          top-52 left-32
+          top-48 left-32
           min-[1736px]:top-[16rem] 
           min-[1736px]:left-60'
         >
@@ -47,34 +36,36 @@ const HomeTemplate: React.FC = () => {
             color='black'
             fontSize={21}
             fontWeight={500}
-            fontFamily='Poppins, serif'
+            fontFamily='Poppins'
           >
             <p>Hey there! My name is</p>
           </Text>
-          <Text
-            color='black'
-            fontSize={52}
-            fontFamily='Poppins, serif'
-            fontWeight={900}
-            lineHeight='1.25'
-          >
-            <h1>Yevhen Balahutrak.</h1>
-          </Text>
-          <Text
-            color='black'
-            fontSize={52}
-            fontFamily='Poppins, serif'
-            fontWeight={900}
-            lineHeight='1.25'
-          >
-            <h1>I build unique things for the web.</h1>
-          </Text>
+          <div>
+            <Text
+              color='black'
+              fontSize={52}
+              fontFamily='Poppins'
+              fontWeight={900}
+              lineHeight='1.25'
+            >
+              <h1>Yevhen Balahutrak.</h1>
+            </Text>
+            <Text
+              color='black'
+              fontSize={52}
+              fontFamily='Poppins'
+              fontWeight={900}
+              lineHeight='1.25'
+            >
+              <h1>I build unique things for the web.</h1>
+            </Text>
+          </div>
+          
           <Text
             color='black'
             fontSize={21}
             fontWeight={500}
-            fontFamily='Poppins, serif'
-            // width='30rem'
+            fontFamily='Poppins'
           >
             <p>
               I’m a software engineer with over 4 years of
@@ -86,11 +77,11 @@ const HomeTemplate: React.FC = () => {
             color='white'
             background='linear-gradient(to left, #D446E2, #5A3BF8)'
             radius={50}
-            fontFamily='Poppins, serif'
+            fontFamily='Poppins'
             fontWeight={500}
             padding='.5rem 1.5rem'
             fontSize={18}
-            margin='2rem 0 0'
+            margin='1.5rem 0 0'
             isAnimated={false}
             display='flex'
             flexDirection='row'
@@ -124,102 +115,23 @@ const HomeTemplate: React.FC = () => {
             </Icon>
           </Button>
         </div>
-      </Wrapper>
+      </div>
       <div
         className='
-        mt-[42rem] 
-        min-[1736px]:mt-[50rem]'
-        // id='work'
+        mt-[54rem] 
+        min-[1736px]:mt-[62rem]
+        grid grid-cols-3 gap-8
+        p-8 w-[100vw] overflow-hidden'
       >
-        <Wrapper
-          justifyContent='center'
-          direction='column'
-          alignItems='center'
-          padding='0 0 4rem'
+        <ExperienceTable />
+        <SkillsTable />
+        {/* <div
+          className='
+          flex flex-col
+          justify-center
+          items-center
+          pb-[4rem]'
         >
-          {/* <div 
-            className='w-0 h-0'
-          >
-            <Background 
-              position='absolute'
-              top='85rem'
-              width='100vw'
-              height='100%'
-              background='url(../../../static/img/waves.svg)'
-            />
-          </div>
-          <Text 
-            color='black'
-            fontSize={52}  
-            fontFamily='Poppins, serif'
-            fontWeight={900}
-            lineHeight='1.25'
-            zIndex={9}
-          >
-            My recent works
-          </Text>
-          <Text 
-            color='black'
-            fontSize={21}
-            fontWeight={500}
-            fontFamily='Poppins, serif'
-            lineHeight='2.5'
-            zIndex={9}
-          >
-            Includes my personal and professional projects
-          </Text>
-          <Link
-            fontFamily='Poppins, serif'
-            borderRadius='50px'
-            border='1px solid black'
-            padding='.35rem 1rem'
-            hoverBackground='black'
-            hoverColor='white'
-            isAnimated={true}
-            margin='.5rem 0 0'
-            href='https://github.com/Yevhenbk?tab=repositories'
-          >
-            View the archive
-          </Link>
-          <div
-            className='
-            grid
-            grid-cols-3
-            justify-items-center
-            w-[90%]
-            pt-[4rem]
-            gap-y-[5.5rem]
-            min-[1736px]:w-[70vw]'
-          >
-            {projectCardItems.map((item: ProjectCardItemsProps) => (
-              <ProjectCard 
-                key={item.id}
-                myKey={item.id}
-                name={item.name}
-                // background={item.background}
-                description={item.description}
-                headerColor={item.headerColor}
-                href={item.href}
-                isReact={item.isReact}
-                isNext={item.isNext}
-                isTypeScript={item.isTypeScript}
-                isSass={item.isSass}
-                isBootstrap={item.isBootstrap}
-                isTailwind={item.isTailwind}
-                isStyledComponents={item.isStyledComponents}
-                isMaterialui={item.isMaterialui}
-                isAzure={item.isAzure}
-                isGoogle={item.isGoogle}
-                isPython={item.isPython}
-                isFlask={item.isFlask}
-                isSQL={item.isSQL}
-                isPostgres={item.isPostgres}
-                isSolidity={item.isSolidity}
-                isEthereum={item.isEthereum}
-                isStrapi={item.isStrapi}
-              />
-            ))}
-          </div> */}
           <div
             className='
             pt-[10rem]
@@ -230,11 +142,11 @@ const HomeTemplate: React.FC = () => {
             gap-[2rem]
             items-center'
             id='about'
-          >
-            <Text 
+          > */}
+            {/* <Text 
               color='black'
               fontSize={52}  
-              fontFamily='Poppins, serif'
+              fontFamily='Poppins'
               fontWeight={900}
               lineHeight='1.25'
               zIndex={9}
@@ -245,7 +157,7 @@ const HomeTemplate: React.FC = () => {
               color='black'
               fontSize={21}
               fontWeight={500}
-              fontFamily='Poppins, serif'
+              fontFamily='Poppins'
               width='60rem'
               textAlign='center'
             >
@@ -286,30 +198,6 @@ const HomeTemplate: React.FC = () => {
               min-[1736px]:w-[80vw]'
               id='contact'
             >
-              {/* <div
-                className='
-                flex
-                flex-row
-                items-center
-                gap-[.5rem]'
-              >
-                <Image 
-                  src={worksut}
-                  alt='Worksut'
-                  className='
-                  rounded-full
-                  w-[2.5rem]
-                  h-[2.5rem]'
-                />
-                <Text
-                  color='#FF524A'
-                  fontSize={24}
-                  fontWeight={500}
-                  fontFamily='serif'
-                >
-                  Worksut
-                </Text>
-              </div> */}
               <Image 
                 src={losTercios}
                 alt='Worksut'
@@ -343,10 +231,10 @@ const HomeTemplate: React.FC = () => {
                 height='3rem'
                 background='url(../../../static/img/norteHispana.svg)'
               />
-            </div>
-          </div>
-        </Wrapper>
-        <div
+            </div> */}
+          {/* </div>
+        </div> */}
+        {/* <div
           className='
           flex
           flex-col
@@ -378,7 +266,7 @@ const HomeTemplate: React.FC = () => {
               <Text 
                 color='black'
                 fontSize={52}  
-                fontFamily='Poppins, serif'
+                fontFamily='Poppins'
                 fontWeight={900}
                 lineHeight='1.25'
                 zIndex={9}
@@ -389,7 +277,7 @@ const HomeTemplate: React.FC = () => {
                 color='black'
                 fontSize={21}
                 fontWeight={500}
-                fontFamily='Poppins, serif'
+                fontFamily='Poppins'
                 width='60rem'
                 textAlign='center'
               >
@@ -398,7 +286,7 @@ const HomeTemplate: React.FC = () => {
                 and let's build amaizing experiences together!
               </Text>
               <Link
-                fontFamily='Poppins, serif'
+                fontFamily='Poppins'
                 borderRadius='50px'
                 border='1px solid black'
                 padding='.35rem 1rem'
@@ -437,7 +325,13 @@ const HomeTemplate: React.FC = () => {
               <Footer />
             </div>
           </div>
-        </div>
+        </div> */}
+      </div>
+      <div
+        className='
+        py-12'
+      >
+        <Carousel />
       </div>
     </main>
   )

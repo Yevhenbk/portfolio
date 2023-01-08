@@ -1,7 +1,7 @@
 import tw from 'twin.macro'
 
 export const IframeStyled = tw.div`
-  z-0
+  z-[7]
   absolute
   -right-16 
   -top-32

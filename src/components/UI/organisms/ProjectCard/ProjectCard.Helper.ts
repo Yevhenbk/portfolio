@@ -1,6 +1,6 @@
 import tw from 'twin.macro'
 
-export interface IconWrapperProps {
+export interface Props {
   children: React.ReactNode
 }
 

@@ -3,7 +3,7 @@ import '../../static/globals.css'
 import { ContextProvider } from '../store/context'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
-import { Jelly } from '@uiball/loaders'
+import { RaceBy } from '@uiball/loaders'
 
 export default function App({ Component, pageProps }: AppProps) {
 
@@ -35,10 +35,10 @@ export default function App({ Component, pageProps }: AppProps) {
             justify-center
             items-center'
           >
-            <Jelly 
+            <RaceBy 
               size={80}
               speed={0.9} 
-              color='#5A3BF8'
+              color='black'
             />
           </div>}
       </ContextProvider>

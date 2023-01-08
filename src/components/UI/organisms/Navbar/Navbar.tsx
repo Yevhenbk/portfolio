@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
             myKey={item.id}
             color={ navbar ? 'black' : '#6E6E6E' }
             background='transparent'
-            fontFamily='Share Tech Mono, sans'
+            fontFamily='Share Tech Mono'
             fontSize={16}
             fontWeight={500}
             padding='.35rem .85rem'
@@ -56,7 +56,7 @@ const Navbar: React.FC = () => {
           hoverColor='#5A3BF8'
           border='1px solid #5A3BF8'
           fontSize={16}
-          fontFamily='Share Tech Mono, serif'
+          fontFamily='Share Tech Mono'
           padding='.25rem .75rem'
           radius={3}
           isAnimated={true}

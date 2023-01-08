@@ -11,9 +11,7 @@ export interface Props {
   skillEight?: string,
   skillNine?: string,
   skillTen?: string,
-  skillEleven?: string,
-  skillTwelve?: string,
-  skillThirteen?: string,
+  skillEleven?: string
 }
 
 export const skillsItems: Props[] = [

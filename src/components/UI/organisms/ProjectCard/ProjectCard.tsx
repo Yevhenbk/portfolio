@@ -1,6 +1,7 @@
 import Text from '@atoms/Text/Text'
 import { CardStyled, WrapperStyled, Props as CardStyledProps } from './ProjectCardStyled'
-import { IconWrapperProps, IconWrapperStyled } from './ProjectCard.Helper'
+import { IconWrapperStyled, 
+  Props as IconWrapperProps } from './ProjectCard.Helper'
 import { useSpring, config } from 'react-spring'
 import { GoLinkExternal } from 'react-icons/go'
 import { RiGoogleFill } from 'react-icons/ri'
@@ -44,8 +45,8 @@ const IconWrapper: React.FC<IconWrapperProps> = (props) => {
   )
 }  
 
-const calc = (x: any, y: any) => [-(y - window.innerHeight / 2) / 40, (x - window.innerWidth / 2) / 40, 1]
-const trans = (x: any, y: any, s: any) => `perspective(800px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
+const calc = (x: any, y: any) => [-(y - window.innerHeight / 1.5) / 40, (x - window.innerWidth / 1.5) / 40, 1]
+const trans = (x: any, y: any, s: any) => `perspective(2000px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
 
 const ProjectCard: React.FC<Props> = (props) => {
 
@@ -83,7 +84,7 @@ const ProjectCard: React.FC<Props> = (props) => {
         </div>
         <Text
           color='#616161'
-          fontSize={18}
+          fontSize={16}
           fontWeight={500}
           fontFamily='Poppins, serif'
           lineHeight='1.5'
