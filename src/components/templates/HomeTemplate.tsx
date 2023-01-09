@@ -11,6 +11,9 @@ import { RiMessage2Line } from 'react-icons/ri'
 import Carousel from '@organisms/Carousel/Carousel'
 import Mailto from '@organisms/Mailto/Mailto'
 import Footer from '@organisms/Footer/Footer'
+import { IconWrapper } from '@organisms/Mailto/Mailto'
+import Image from 'next/image'
+import gmail from '../../../static/img/gmail.png'
 
 const HomeTemplate: React.FC = () => {
 
@@ -130,35 +133,66 @@ const HomeTemplate: React.FC = () => {
       </div>
       <div
         className='
-        py-12'
+        pb-12'
         id='work'
       >
         <Carousel />
       </div>
       <div
         className='
-        flex flex-row-reverse
-        justify-around
-        items-center pt-12
-        pb-40'
+        flex flex-row
+        justify-between
+        items-center 
+        pb-24 px-8'
         id='about'
       >
         <Mailto />
         <div
           className='
-          text-start w-[55rem]
-          flex flex-col gap-5'
+          text-end flex
+          flex-col gap-12
+          items-end pr-[3rem]'
         >
           <Text 
             fontFamily='Poppins'
             fontSize={36}
             fontWeight={900}
             lineHeight='1.25'
+            width='25rem'
+            textAlign='end'
           >
-            About Me
+            <h1>What is next?</h1>
           </Text>
           <Text
-            fontSize={18}
+            fontSize={21}
+            fontWeight={500}
+            fontFamily='Poppins'
+            width='30rem'
+          >
+            <p>My inbox is always open. Whether you have a question or 
+            just want to say hi, I will always get back to you! Reach 
+            out and let's build amaizing experiences together!</p>
+          </Text>
+          <IconWrapper
+            onClick={() => global.location.href = 'mailto:balagutrak.jenia@gmail.com'}
+          >
+            <Image 
+              src={gmail} 
+              alt='gmail'
+              className='
+              w-8
+              object-cover' 
+            />
+            <Text
+              fontSize={21}
+              fontWeight={500}
+              fontFamily='Poppins'
+            >
+              Get in Touch
+            </Text>
+          </IconWrapper>
+          {/* <Text
+            fontSize={16}
             fontWeight={500}
             fontFamily='Poppins'
           >
@@ -187,7 +221,7 @@ const HomeTemplate: React.FC = () => {
               target='_blank'> landing page</a> for the company. Currently I am looking for new opportunities, 
               so don't hesistate to reach out.
             </p>
-          </Text>
+          </Text> */}
         </div>
       </div>
       <Footer />
