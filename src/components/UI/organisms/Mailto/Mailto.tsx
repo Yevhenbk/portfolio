@@ -47,7 +47,7 @@ const Mailto: React.FC = () => {
         <Text
           color='white'
           fontSize={16}
-          fontWeight={400}
+          fontWeight={500}
           width='23rem'
           fontFamily='Poppins'
         >

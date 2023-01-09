@@ -8,8 +8,8 @@ export interface Props {
 
 export const IconWrapperStyled = tw.div`
   rounded-full
-  border-[1px]
-  border-[rgba(255, 255, 255, 0.7)]
+  shadow-[ 0px 0px 16px]
+  shadow-[#5A3BF8c8]
   bg-[#5A3BF8]
   h-[4rem]
   w-[4rem]
