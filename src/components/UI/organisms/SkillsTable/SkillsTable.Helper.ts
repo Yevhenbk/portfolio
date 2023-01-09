@@ -5,7 +5,7 @@ export const IconWrapperStyled = tw.div`
   bg-[rgba(255, 255, 255, 0.3)]
   rounded-full
   text-center
-  text-sm
+  text-base
   font-['Share Tech Mono']
   min-[1736px]:text-base
 `
