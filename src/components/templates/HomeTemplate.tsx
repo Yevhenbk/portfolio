@@ -170,7 +170,7 @@ const HomeTemplate: React.FC = () => {
         </Text>
         <div 
           className='
-          h-[.1rem]
+          h-[.15rem]
           w-[36vw] bg-[#adadadc5]'
         />
       </div>
