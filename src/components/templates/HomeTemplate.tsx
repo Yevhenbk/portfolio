@@ -144,6 +144,7 @@ const HomeTemplate: React.FC = () => {
       <div
         className='
         pt-14 pb-28'
+        id='contact'
       >
         <Mailto />
       </div>
