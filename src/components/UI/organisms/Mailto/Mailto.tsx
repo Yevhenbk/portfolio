@@ -38,7 +38,7 @@ const Mailto: React.FC = () => {
         fontSize={21}
         fontWeight={500}
         fontFamily='Poppins'
-        width='30rem'
+        width='40rem'
       >
         <p>My inbox is always open. Whether you have a question or 
         just want to say hi, I will always get back to you! Reach 
