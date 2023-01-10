@@ -3,7 +3,7 @@ import { ProjectImageStyled, Props as ProjectImageProps } from './ProjectImageSt
 interface Props
   extends ProjectImageProps {
     myKey: number,
-    href: string
+    href?: string
   }
 
 const ProjectImage: React.FC<Props> = (props) => {

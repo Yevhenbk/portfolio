@@ -1,25 +1,25 @@
 import { FooterStyled } from './FooterStyled'
 import Text from '@atoms/Text/Text'
+import ProjectImage from '@molecules/ProjectImage/ProjectImage'
+import { projectImageItems,
+  Props as ProjectImageItemsProps } from '../../../../../static/utils/ProjectImageItems'
 
 const Footer: React.FC = () => {
   return (
     <FooterStyled>
-      <Text 
-        color='white'
-        fontSize={18}  
-        fontFamily='Share Tech Mono'
-        fontWeight={400}
-      >
-        <p>Designed and built by Yevhen Balahutrak ® 2022</p>
-      </Text>
-      <Text 
-        color='white'
-        fontSize={18}  
-        fontFamily='Share Tech Mono'
-        fontWeight={400}
-      >
-        <p>balagutrak.jenia@gmail.com | +34643355265</p>
-      </Text>
+      {projectImageItems.map((item: ProjectImageItemsProps) => (
+        <ProjectImage 
+          key={item.id}
+          myKey={item.id}
+          title={item.title}
+          background={item.background}
+          top={item.top}
+          right={item.right}
+          left={item.left}
+          zIndex={item.zIndex}
+          href={item.href}
+        />
+      ))}
     </FooterStyled>
   )
 }

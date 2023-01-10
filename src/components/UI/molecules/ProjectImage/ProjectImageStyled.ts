@@ -33,7 +33,7 @@ export const ProjectImageStyled = styled.div((props: Props) => [`
     text-align: center;
     bottom: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.6);
     display: flex;
     align-items: center;
     justify-content: center;

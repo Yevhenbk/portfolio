@@ -20,7 +20,6 @@ export const IconWrapperStyled = tw.button`
   shadow-[#5A3BF8c8]
   bg-[#5A3BF8]
   hover:cursor-pointer
-  // hover:bg-[#F63533]
   ease-in
   duration-100
   hover:bg-[#4a30ce]

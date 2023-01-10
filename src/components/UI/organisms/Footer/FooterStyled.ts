@@ -7,6 +7,5 @@ export const FooterStyled = tw.div`
   py-[3rem]
   px-[4rem]
   items-center
-  justify-between
-  bg-[#432E52]
+  justify-center
 `

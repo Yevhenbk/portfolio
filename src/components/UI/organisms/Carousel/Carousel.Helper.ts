@@ -19,8 +19,10 @@ export const IconWrapperStyled = tw.div`
   text-white
   ease-in
   duration-100
+  hover:bg-[#4a30ce]
+  hover:shadow-[#4a30cec8]
   hover:cursor-pointer
-  hover:scale-[1.15]
+  // hover:scale-[1.15]
   text-3xl
   font-['Poppins']
 `

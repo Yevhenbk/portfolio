@@ -34,3 +34,11 @@ a {
 ::-webkit-scrollbar-thumb:active {
   background-color: grey;
 }
+
+#b-text {
+  -webkit-background-clip: text;
+  background-clip: text;
+  object-fit: cover;
+  -webkit-text-fill-color: transparent;
+  background-image: url(../static/img/gradientRad.jpg);
+}
