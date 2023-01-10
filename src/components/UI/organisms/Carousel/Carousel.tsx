@@ -29,7 +29,7 @@ const Carousel: React.FC = () => {
         className='
         absolute right-[2rem]
         top-[134rem] z-30
-        min-[1736px]:top-[140rem]'
+        min-[1736px]:top-[142rem]'
       >
         <IconWrapper
           onClick={() => setNumber(number+=1)}
@@ -43,7 +43,7 @@ const Carousel: React.FC = () => {
         className='
         absolute left-[2rem]
         top-[134rem] z-30
-        min-[1736px]:top-[140rem]'
+        min-[1736px]:top-[142rem]'
         style={number <= 0 ? {display: 'none'}
         : {display: 'flex'}}
       >
